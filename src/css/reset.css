@@ -35,36 +35,3 @@ img {
 }
 
 
-@font-face {
-  font-family: 'Montserrat', sans-serif;
-  src: url('/src/fonts/Montserrat/static/Montserrat-Regular.ttf') format ('woff2');
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Montserrat', sans-serif;
-  src: url('/src/fonts/Montserrat/static/Montserrat-Medium.ttf') format ('woff2');
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'Montserrat', sans-serif;
-  src: url('/src/fonts/Montserrat/static/Montserrat-SemiBold.ttf') format ('woff2');
-  font-weight: 600;
-}
-
-@font-face {
-  font-family: 'Montserrat', sans-serif;
-  src: url('/src/fonts/Montserrat/static/Montserrat-Bold.ttf') format ('woff2');
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'Montserrat', sans-serif;
-  src: url('/src/fonts/Montserrat/static/Montserrat-SemiBoldItalic.ttf') format ('woff2');
-  font-weight: 700;
-  font-style: italic;
-}
-
-
-
