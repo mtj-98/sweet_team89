@@ -1,61 +1,63 @@
 
 <div class="bacdrop-modal-explore">
-<div class="modal-window-explore">
+<div class="modal-window-explore ">
     <button type="button" class="modal-btn-explore-close">
-        <svg width="8" height="8" class="modal-btn-explore-close-icon">
-            <use href="" ></use>
+        <svg width="12" height="12" class="modal-btn-explore-close-icon">
+            <use href="../img/icons.svg#icon-close"></use>
         </svg>
     </button>
 
 
-    <h2>leave a review about <span>our chocolate</span></h2>
+    <h2 class="title-modal-explore">leave a review about <span class="part-text-modal-explore">our chocolate</span></h2>
 
 
     <form class="">
+      <div class="modal-explore-form">
         <label class="">
-         <span class="">
+         <span class="modal-form-box">
           <input
             type="text"
             name="user_name"
             required
             minlength="2"
             placeholder="Name"
-            class=""
+            class="modal-explore-input"
           />
          </span>
         </label>
 
         <label class="">
-          <span class="">
+          <span class="modal-form-box">
           <input type="email" 
           name="user_email" 
           required 
-          class="" 
+          class="modal-explore-input" 
           placeholder="Enter your email"/>
           </span>
         </label>
 
         <label class="">
-            <span class="">
-             <input type="tel" name="user_phone" required class="" placeholder="Phone number" />
-            <svg width="" height="" class="">
-              <use href=""></use>
-            </svg>
+            <span class="modal-form-box">
+             <input type="tel" name="user_phone" required class="modal-explore-input" placeholder="Phone number" />
             </span>
           </label>
 
-
-
-
-        <label class="">
-          <textarea
-            name="user_message"
-            class="modal-form-message"
-            placeholder="Enter text"
-          ></textarea>
-        </label>
+          <label class="">
+            <textarea
+              name="user_message"
+              class=" modal-form-box-textarea"
+              placeholder="Enter text"
+            ></textarea>
+          </label>
+      </div>
+      
         
-        <button type="submit" class="modal-form-submit">Send</button>
+        <button type="submit" class="modal-explore-form-submit">
+         <span class="btn-text-explore-disc">
+           Send
+         </span>
+         
+        </button>
         
       </form>
 </div>
