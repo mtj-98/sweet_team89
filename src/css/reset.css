@@ -33,3 +33,30 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: url('/src/css/Montserrat/static/Montserrat-Regular.ttf') format ('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: url('/src/css/Montserrat/static/Montserrat-Medium.ttf') format ('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: url('/src/css/Montserrat/static/Montserrat-SemiBold.ttf') format ('woff2');;
+}
+
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: url('/src/css/Montserrat/static/Montserrat-Bold.ttf') format ('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: url('/src/css/Montserrat/static/Montserrat-SemiBoldItalic.ttf') format ('woff2');
+}
+
