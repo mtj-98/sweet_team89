@@ -1,1 +1,171 @@
-/* ###############   ADVANTAGES   ############### */
+.advantages-container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.advantages-icon {
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    height: 62px;
+    width: 62px;
+    padding: 15px;
+    fill: var(--accent-color);
+    margin-bottom: 22px;
+}
+
+.advantages-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 18px;
+}
+
+.advantages-description {
+    color: rgba(255, 255, 255, 0.7);
+    width: 308px;
+}
+
+.advantages-section {
+    background-color: var(--bg-color-secondary);
+}
+
+.advantages-list {
+    display: flex;
+}
+
+
+.advantages-description-taste {
+    padding-bottom: 18px;
+}
+
+
+/* ###############   0-374PX   ############### */
+@media screen and (max-width: 374px) {
+    .advantages-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .advantages-list {
+        flex-direction: column;
+        gap: 20px;
+        height: 792px;
+    }
+    
+    .advantages-description {
+        width: 100%;
+    }
+}
+
+
+/* ############################################# */
+
+
+/* ###############   MOBILE   ############### */
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .advantages-container {
+        width: 375px;
+        height: 792px;
+        padding: 20px;
+    }
+
+    .advantages-list {
+        flex-direction: column;
+        gap: 20px;
+        height: 792px;
+    }
+
+    .container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .advantages-description-production {
+        padding-bottom: 16px;
+    }
+}
+
+/* ############################################# */
+
+
+/* ###############   TABLET   ############### */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .advantages-list {
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .advantages-container {
+        width: 768px;
+        height: 620px;
+        padding: 50px 32px;
+    }
+
+    .advantages-decor {
+        position: relative;
+        padding-right: 18px;
+        height: 244px;
+    }
+
+    .advantages-decor-price {
+        height: 243px;
+    }
+
+    .advantages-description-production {
+        padding-bottom: 35px;
+    }
+}
+
+/* ############################################# */
+
+
+/* ###############   DESKTOP   ############### */
+@media screen and (min-width: 1200px) {
+    .advantages-list {
+        column-gap: 70px;
+        height: 244px;
+    }
+
+    .advantages-container {
+        width: 1200px;
+        padding: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .advantages-item {
+        width: 308px;
+        height: 244px;
+    }
+
+    .advantages-decor {
+        position: relative;
+        padding-right: 18px;
+    }
+
+    .advantages-decor-price {
+        height: 243px;
+    }
+
+    .advantages-item-price {
+        height: 243px;
+    }
+
+    .advantages-decor::after {
+        position: absolute;
+        right: 0;
+        content: "";
+        width: 1px;
+        max-height: 124px;
+        height: 100%;
+        top: 60px;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+    .advantages-description-production {
+        padding-bottom: 35px;
+    }
+}
+
+/* ############################################# */
