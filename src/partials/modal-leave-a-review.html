@@ -1,7 +1,7 @@
 <div class="bacdrop-modal-explore is-hidden">
   <div class="modal-window-explore">
     <button type="button" class="modal-btn-explore-close">
-      <svg width="12" height="12" class="modal-btn-explore-close-icon">
+      <svg class="modal-btn-explore-close-icon  size-btn-explore-close-icon">
         <use href="../img/icons.svg#icon-close"></use>
       </svg>
     </button>
@@ -22,7 +22,7 @@
               minlength="2"
               placeholder="Name"
               class="modal-explore-input"
-              pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" 
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?!.*\s).[a-zA-Zа-яА-ЯіІїЇґҐєЄʼ]+*$" 
               title="Please include at least 1 uppercase character, 1 lowercase character."
             />
           </span>
@@ -50,7 +50,7 @@
               required
               class="modal-explore-input number-imput"
               placeholder="Phone number"
-              pattern="[789][0-9]{9}"
+              pattern="[0-9][0-9]{9}"
               title="Please enter your phone number without using the country code."
             />
             <span class="flag-number-part">

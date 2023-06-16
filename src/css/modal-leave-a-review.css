@@ -57,11 +57,13 @@
   border: transparent;
   padding: 0;
 }
+.size-btn-explore-close-icon {
+  width: 12px;
+  height: 12px;
+}
 
 .modal-btn-explore-close:hover,
 .modal-btn-explore-close:focus {
-  width: 28px;
-  height: 28px;
   background-color: #fcf1e0;
   border-radius: 50%;
   fill: #f16529;
@@ -74,16 +76,15 @@
     right: 24px;
   }
 
+  .size-btn-explore-close-icon {
+    width: 14px;
+    height: 14px;
+  }
   .modal-btn-explore-close {
     width: 40px;
     height: 40px;
   }
 
-  .modal-btn-explore-close:hover,
-  .modal-btn-explore-close:focus {
-    width: 40px;
-    height: 40px;
-  }
 }
 
 /* Title modal window */
@@ -150,7 +151,7 @@
   background-color: rgba(17, 17, 17, 0.05);
   width: 1px;
   height: 24px;
-  left: 70px;
+  left: 73px;
 }
 
 .modal-form-box-textarea {
