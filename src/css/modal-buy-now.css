@@ -1,0 +1,382 @@
+.backdrop-modal-buy-now {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(46, 47, 66, 0.4);
+  /* transition: opacity var(--transition-properties),
+    visibility var(--transition-properties); */
+}
+
+.modal-buy-now {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 95%;
+  height: 95%;
+  max-width: 311px;
+  max-height: 994px;
+  padding: 32px 24px;
+
+  background: #fafafa;
+  border-radius: 15px;
+  overflow: scroll;
+
+  transition: transform var(--transition-properties);
+}
+
+@media screen and (min-width: 375px) {
+  .modal-buy-now {
+    width: 100%;
+  }
+}
+
+/* == Tablet, Desktop == */
+
+@media screen and (min-width: 768px) {
+  .modal-buy-now {
+    height: 100%;
+    /*width: 100%; */
+    max-width: 609px;
+    max-height: 1058px;
+    padding: 48px;
+  }
+}
+
+/* ===== Modal Buy Now closing button ===== */
+
+.modal-buy-close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  width: 28px;
+  height: 28px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  transition: background-color var(--transition-properties),
+    border var(--transition-properties);
+}
+
+.modal-buy-close-btn:hover,
+.modal-buy-close-btn:focus {
+  border-radius: 50%;
+  background-color: var(--btn-bg-color);
+}
+
+.modal-buy-close-icon {
+  width: 12px;
+  height: 12px;
+  transition: fill var(--transition-properties);
+}
+
+.modal-buy-close-btn:hover .modal-buy-close-icon,
+.modal-buy-close-btn:focus .modal-buy-close-icon {
+  fill: var(--accent-color);
+}
+
+/* == Tablet, Desktop == */
+
+@media screen and (min-width: 768px) {
+  .modal-buy-close-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .modal-buy-close-icon {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+/* ===== Modal Buy Now header ===== */
+
+.modal-buy-header {
+  margin-bottom: 32px;
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--text-color-discr);
+}
+
+.modal-buy-header-span {
+  color: var(--accent-color);
+}
+
+/* == Tablet, Desktop == */
+
+@media screen and (min-width: 768px) {
+  .modal-buy-header {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+/* ========= Products List with Images ========= */
+
+.modal-buy-products-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.modal-buy-products-list-item {
+  padding: 8px 16px;
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.modal-buy-products-wrp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-buy-product-img {
+  margin-right: auto;
+}
+
+.modal-buy-products-weight {
+  padding: 6px 16px;
+  min-width: 70px;
+  height: 29px;
+
+  font-weight: 600;
+  text-align: center;
+  background: #fafafa;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+}
+
+/* == Tablet, Desktop == */
+
+@media screen and (min-width: 768px) {
+  .modal-buy-products-list {
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .modal-buy-products-list-item {
+    flex-basis: calc((100% - 32px) / 3);
+    padding: 24px 20px 18px;
+  }
+
+  .modal-buy-products-list-item:nth-child(3) {
+    padding: 20px 20px 18px;
+  }
+
+  .modal-buy-products-wrp {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .modal-buy-product-img {
+    margin-right: 0;
+  }
+
+  .modal-buy-products-weight {
+    padding: 8px 27px;
+    min-width: 96px;
+    height: 33px;
+
+    font-weight: 600;
+    text-align: center;
+    background: #fafafa;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+  }
+}
+
+/* ========= Buyer's Personal Info ========= */
+
+.modal-buy-now-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.modal-buy-field-wrapper {
+  /* margin-bottom: 18px; */
+}
+
+.modal-buy-label {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  line-height: 1.17;
+  color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-buy-label {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal-buy-label {
+    line-height: 1.29;
+  }
+}
+
+/* === Modal Buy Now Input Styles === */
+
+.modal-buy-input-wrp {
+  position: relative;
+}
+
+.modal-buy-first-last-name-wrp {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-buy-input {
+  padding: 14px 18px;
+  width: 100%;
+  height: 45px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+
+  background-color: transparent;
+  outline: transparent;
+
+  transition: border-color var(--transition-properties);
+}
+
+.modal-buy-input-phone {
+  padding-left: 106px;
+}
+
+.modal-buy-input:focus,
+.modal-buy-comment:focus {
+  border-color: var(--accent-color);
+}
+
+.modal-buy-input::placeholder,
+.modal-buy-comment::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.modal-buy-flag-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.modal-buy-country-code {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
+  align-items: center;
+  width: 74px;
+  box-shadow: 1.5px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+.modal-buy-country-code-text {
+  font-weight: 500;
+  color: #000000;
+}
+
+.modal-buy-card-logo {
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  transform: translateY(-50%);
+
+  width: 22px;
+  height: 13px;
+}
+
+/* === Modal Buy Now Comment Styles === */
+
+.modal-buy-comment-wrp {
+  margin-bottom: 18px;
+}
+
+.modal-buy-comment {
+  padding: 14px 18px 60px;
+  width: 100%;
+  height: 91px;
+
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  resize: none;
+  overflow-y: auto;
+
+  background-color: transparent;
+  outline: transparent;
+
+  transition: border-color var(--transition-properties);
+}
+
+/* ========= Modal Buy Now Submit Button Styles ========= */
+
+.modal-buy-submit-btn {
+  padding: 12px 28px;
+  min-width: 109px;
+  height: 41px;
+
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 100px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color var(--transition-properties),
+    color var(--transition-properties);
+}
+
+.modal-buy-submit-btn:hover,
+.modal-buy-submit-btn:focus {
+  color: var(--accent-color);
+  background-color: var(--btn-bg-color);
+}
+
+/* .is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+} */
