@@ -1,0 +1,71 @@
+<div class="bacdrop-modal-explore is-hidden">
+  <div class="modal-window-explore">
+    <button type="button" class="modal-btn-explore-close">
+      <svg width="12" height="12" class="modal-btn-explore-close-icon">
+        <use href="../img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="title-modal-explore">
+      leave a review about
+      <span class="part-text-modal-explore">our chocolate</span>
+    </h2>
+
+    <form class="">
+      <div class="modal-explore-form">
+        <label class="">
+          <span class="modal-form-box">
+            <input
+              type="text"
+              name="user_name"
+              required
+              minlength="2"
+              placeholder="Name"
+              class="modal-explore-input"
+            />
+          </span>
+        </label>
+
+        <label class="">
+          <span class="modal-form-box">
+            <input
+              type="email"
+              name="user_email"
+              required
+              class="modal-explore-input"
+              placeholder="Enter your email"
+            />
+          </span>
+        </label>
+
+        <label class="rew-phone-number">
+          <span class="modal-form-box">
+            <input
+              type="tel"
+              name="user_phone"
+              required
+              class="modal-explore-input number-imput"
+              placeholder="Phone number"
+            />
+            <span class="flag-number-part">
+              <svg width="24" height="24" class="phone-numb-icon">
+                <use href="../img/icons.svg#icon-flag-ua"></use>
+              </svg>
+              <span class="stick-part">+380</span>
+            </span>
+          </span>
+        </label>
+
+        <label class="">
+          <textarea
+            name="user_message"
+            class="modal-form-box-textarea"
+            placeholder="Enter text"
+          ></textarea>
+        </label>
+      </div>
+
+      <button type="submit" class="modal-explore-form-submit">Send</button>
+    </form>
+  </div>
+</div>
