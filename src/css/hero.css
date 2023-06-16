@@ -1,28 +1,105 @@
-.header {
-    padding: 0;
-}
-.nav-list{
-    display: none;
-}
-.section-hero{
+.section-hero {
     width: 1136px;
     height: 600px;
-    background-color: aquamarine;
-    padding: 0;
-    margin: 0;
+    background-image: url(../img/hero/hero-desktop-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 72px;
+
+
 
 }
+
 .hero-title {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+    color: #FFFFFF;
+    max-width: 484px;
+
+}
+
+.hero {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-top: 381px;
+}
+
+.button-hero {
+    display: flex;
+    align-items:baseline;
+    justify-content: flex-start;
+    margin-top: 32px;
+    
+}
+
+.button-hero-left {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 14px;
+    flex-wrap: nowrap;
+
+
+}
+
+.button-hero-buy {
+    background: #FD9222;
+    border: none;
+
+   
+
+}
+.button-hero-how {
+    background:none;
+    border: 1px solid #FFFFFF;
+    
+}
+.button-hero-two {
+    border-radius: 100px;
+  
+    height: 45px;
+    padding: 14px 40px;
+    display: block;
+    
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+.button-hero-footer{
+   
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
 font-family: Montserrat;
 font-weight: 500;
-font-size: 28px;
-line-height: 1.21;
+font-size: 14px;
+line-height: 1.28;
 letter-spacing: -0.03em;
 color: #FFFFFF;
-max-width: 484px;
+
+background:none;
+border: none;
+
 }
-.hero {
-   margin-left: 40px;
-margin-top: 381px;
-   margin-bottom: 40px;
+.modal-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background: #FFFFFF;
+    fill: #FD9222;
+    border-radius: 50%;
+    margin-left: 14px;
+
 }
