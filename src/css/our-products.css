@@ -1,3 +1,8 @@
+
+.our-products {
+    padding-bottom: 128px;
+}
+
 .our-products-container {
     max-width: 375px;
     padding: 0 20px;
@@ -22,11 +27,13 @@
 
 .products-card-list {
     display: flex;
-
+    justify-content: center;
+    align-items: center;
 }
 
 .products-card {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
     padding: 32px 0;
@@ -34,6 +41,12 @@
     background: #FFFFFF;
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 15px;
+}
+
+@media screen and (max-width:767px) {
+    .products-card-item:not(:first-child) {
+        display: none;
+    }
 }
 
 .chocolate-flavour {
@@ -73,6 +86,7 @@
 
     .products-card-list {
         gap: 18px;
+        flex-wrap: wrap;
     }
 
     .products-card-item {
@@ -81,5 +95,11 @@
 
     .products-card{
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .products-card-item {
+        flex-basis: calc((100% - 54px) / 4);
     }
 }
