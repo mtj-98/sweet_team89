@@ -1,0 +1,20 @@
+/* .our-products-container {
+    max-width: 335px;
+    margin: 0 auto;
+} */
+
+.our-products-text {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.products-card-list {
+    display: flex;
+    
+}
+
+.products-card {
+    display: block;
+    max-width: 335px;
+    width: 100%;
+}
