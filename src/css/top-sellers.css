@@ -13,9 +13,10 @@
 
 .top-sellers-pictures {
   width: 100%;
+  border-radius: 15px;
 }
 
-.top-sellers-list-pictures-with-text {
+.top-sellers-list-pictures:first-child {
   margin-bottom: 32px;
 }
 
@@ -65,6 +66,9 @@
   .top-sellers-pictures-three {
     display: none;
   }
+  .t-s-text-tablet-desktop {
+    display: none;
+  }
 }
 @media screen and (min-width: 375px) {
   .top-sellers-pictures {
@@ -79,6 +83,37 @@
 .top-sellers-list {
     flex-direction: row;
 }
+.top-sellers-list-pictures:first-child {
+margin-right: 16px;
+}
+.top-sellers-pictures {
+  width: 344px;
+}
+.t-s-text-mobile {
+  display: none;
+}
+.t-s-text-tablet-desktop {
+display: block;
+}
 
+.section-title {
+  margin-bottom: 50px;
+}
+.top-sellers-text-and-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.top-sellers-btn{
+  width: 162px;
+  height: 50px;
+  margin-left: 0;
+  margin-right: 0;
 
+}
+}
+@media screen and (min-width: 1200px) {
+.top-sellers-pictures {
+    width: 368px;
+  }
 }
