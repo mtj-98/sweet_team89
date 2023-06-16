@@ -1,8 +1,3 @@
-.advantages-container {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .advantages-icon {
     border: 1px solid #ffffff;
     border-radius: 50%;
@@ -24,6 +19,8 @@
 .advantages-description {
     color: rgba(255, 255, 255, 0.7);
     width: 308px;
+    max-height: 119px;
+    line-height: 1.21;
 }
 
 .advantages-section {
@@ -44,13 +41,13 @@
 @media screen and (max-width: 374px) {
     .advantages-container {
         width: 100%;
-        padding: 20px;
+        height: 100%;
     }
 
     .advantages-list {
         flex-direction: column;
         gap: 20px;
-        height: 792px;
+        min-height: 792px;
     }
     
     .advantages-description {
@@ -65,24 +62,29 @@
 /* ###############   MOBILE   ############### */
 @media screen and (min-width: 375px) and (max-width: 767px) {
     .advantages-container {
-        width: 375px;
         height: 792px;
-        padding: 20px;
     }
 
     .advantages-list {
         flex-direction: column;
         gap: 20px;
-        height: 792px;
     }
 
-    .container {
+    .advantages-container {
         padding-top: 20px;
         padding-bottom: 20px;
     }
 
     .advantages-description-production {
         padding-bottom: 16px;
+    }
+    
+    .advantages-item {
+        height: 244px;
+    }
+
+    .advantages-item:last-child {
+        margin-bottom: 0;
     }
 }
 
@@ -97,19 +99,15 @@
     }
 
     .advantages-container {
-        width: 768px;
         height: 620px;
-        padding: 50px 32px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .advantages-decor {
         position: relative;
         padding-right: 18px;
         height: 244px;
-    }
-
-    .advantages-decor-price {
-        height: 243px;
     }
 
     .advantages-description-production {
@@ -128,28 +126,18 @@
     }
 
     .advantages-container {
-        width: 1200px;
-        padding: 50px;
-        margin-left: auto;
-        margin-right: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .advantages-item {
-        width: 308px;
         height: 244px;
+        
     }
 
     .advantages-decor {
         position: relative;
         padding-right: 18px;
-    }
-
-    .advantages-decor-price {
-        height: 243px;
-    }
-
-    .advantages-item-price {
-        height: 243px;
     }
 
     .advantages-decor::after {
