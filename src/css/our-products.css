@@ -1,20 +1,85 @@
-/* .our-products-container {
-    max-width: 335px;
+.our-products-container {
+    max-width: 375px;
+    padding: 0 20px;
     margin: 0 auto;
-} */
+}
 
 .our-products-text {
     margin-bottom: 50px;
     text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #111111;
+}
+
+.our-products-text-span {
+    color: #FD9222;
 }
 
 .products-card-list {
     display: flex;
-    
+
 }
 
 .products-card {
-    display: block;
-    max-width: 335px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0;
+    width: 335px;
+    background: #FFFFFF;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+}
+
+.chocolate-flavour {
+    margin: 8px 0 2px 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #111111;
+}
+
+.type-chocolate {
+    margin-bottom: 18px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: rgba(17, 17, 17, 0.7);
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px 20px;
+    background: #FAFAFA;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .our-products-container {
+        max-width: 768px;
+    }
+
+    .products-card-list {
+        gap: 18px;
+    }
+
+    .products-card-item {
+        width: 270px;
+    }
+
+    .products-card{
+        width: 100%;
+    }
 }
