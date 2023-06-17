@@ -1,3 +1,8 @@
+a. {
+  width: 100%;
+  height: 100%;
+}
+
 .container {
   max-width: 375px;
   margin-left: auto;
@@ -106,5 +111,19 @@
   .text-section-unique-components {
     width: 486px;
     margin-bottom: 50px;
+  }
+
+  .unique-components-list-item {
+    width: 336px;
+    height: 270px;
+  }
+}
+
+/* ==================1200===================== */
+
+@media screen and (min-width: 1200px) {
+  .unique-components-list-item {
+    width: 270px;
+    height: 270px;
   }
 }
