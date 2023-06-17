@@ -50,6 +50,8 @@
 
 .unique-components-list-item {
   border-radius: 15px;
+  width: 335px;
+  height: 270px;
 }
 
 .unique-components-list-item:nth-child(1) {
@@ -60,6 +62,11 @@
 .unique-components-list-item:nth-child(3) {
   background-color: #1e1823;
   color: #ffffff;
+}
+
+.unique-components-list-item:nth-child(even) {
+  background: #ffffff;
+  border: 1px solid #fd9222;
 }
 
 .card-container {
