@@ -69,7 +69,11 @@
   .top-sellers-list-pictures:first-child {
     margin-bottom: 32px;
   }
+  .top-sellers-pictures-one {
+margin-bottom: 20px;
+  }
 }
+
 @media screen and (min-width: 375px) {
   .top-sellers-pictures {
     width: 335px;
