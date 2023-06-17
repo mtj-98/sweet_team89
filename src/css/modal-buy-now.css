@@ -7,8 +7,8 @@
   height: 100%;
 
   background: rgba(46, 47, 66, 0.4);
-  /* transition: opacity var(--transition-properties),
-    visibility var(--transition-properties); */
+  transition: opacity var(--transition-properties),
+    visibility var(--transition-properties);
 }
 
 .modal-buy-now {
@@ -23,7 +23,7 @@
   max-height: 994px;
   padding: 32px 24px;
 
-  background: #fafafa;
+  background: var(--modal-bg-color);
   border-radius: 15px;
   overflow: scroll;
 
@@ -41,7 +41,6 @@
 @media screen and (min-width: 768px) {
   .modal-buy-now {
     height: 100%;
-    /*width: 100%; */
     max-width: 609px;
     max-height: 1058px;
     padding: 48px;
@@ -80,12 +79,13 @@
 .modal-buy-close-icon {
   width: 12px;
   height: 12px;
-  transition: fill var(--transition-properties);
+  stroke: var(--text-color-discr);
+  transition: stroke var(--transition-properties);
 }
 
 .modal-buy-close-btn:hover .modal-buy-close-icon,
 .modal-buy-close-btn:focus .modal-buy-close-icon {
-  fill: var(--accent-color);
+  stroke: var(--accent-color);
 }
 
 /* == Tablet, Desktop == */
@@ -116,10 +116,6 @@
   color: var(--text-color-discr);
 }
 
-.modal-buy-header-span {
-  color: var(--accent-color);
-}
-
 /* == Tablet, Desktop == */
 
 @media screen and (min-width: 768px) {
@@ -140,7 +136,7 @@
 
 .modal-buy-products-list-item {
   padding: 8px 16px;
-  background: #ffffff;
+  background: var(--secondary-text-decr);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   overflow: hidden;
@@ -163,7 +159,7 @@
 
   font-weight: 600;
   text-align: center;
-  background: #fafafa;
+  background: var(--modal-bg-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
 }
@@ -205,7 +201,7 @@
 
     font-weight: 600;
     text-align: center;
-    background: #fafafa;
+    background: var(--modal-bg-color);
     border: 1px solid rgba(17, 17, 17, 0.1);
     border-radius: 100px;
   }
@@ -213,17 +209,13 @@
 
 /* ========= Buyer's Personal Info ========= */
 
-.modal-buy-now-form {
+.buy-now-form-wrp {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 18px;
   margin-bottom: 18px;
 }
-
-/* .modal-buy-field-wrapper {
-  margin-bottom: 18px; 
-}*/
 
 .modal-buy-label {
   display: inline-block;
@@ -238,6 +230,8 @@
     font-size: 12px;
   }
 }
+
+/* == Tablet, Desktop == */
 
 @media screen and (min-width: 768px) {
   .modal-buy-label {
@@ -274,6 +268,8 @@
 }
 
 .modal-buy-input-phone {
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 106px;
 }
 
@@ -301,6 +297,7 @@
   top: 50%;
   left: 18px;
   transform: translateY(-50%);
+  z-index: 1;
 
   display: flex;
   gap: 8px;
@@ -320,19 +317,70 @@
   top: 50%;
   right: 14px;
   transform: translateY(-50%);
+  z-index: 1;
 
-  width: 22px;
-  height: 13px;
+  width: 32px;
+  height: 21px;
+}
+
+/* == Tablet, Desktop == */
+
+@media screen and (min-width: 768px) {
+  .modal-buy-first-last-name-wrp {
+    flex-direction: row;
+    gap: 21px;
+  }
+
+  .modal-buy-input {
+    flex-basis: calc((100% - 21px) / 2);
+    padding: 22px 24px;
+    height: 66px;
+    border-radius: 13px;
+  }
+
+  .modal-buy-input-phone {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 177px;
+  }
+
+  .modal-buy-input::placeholder,
+  .modal-buy-comment::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .modal-buy-flag-icon {
+    height: 32px;
+    width: 32px;
+  }
+
+  .modal-buy-country-code {
+    left: 24px;
+
+    display: flex;
+    gap: 18px;
+    width: 125px;
+  }
+
+  .modal-buy-country-code-text {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .modal-buy-card-logo {
+    right: 24px;
+
+    width: 44px;
+    height: 30px;
+  }
 }
 
 /* === Modal Buy Now Comment Styles === */
 
-.modal-buy-comment-wrp {
-  margin-bottom: 18px;
-}
-
 .modal-buy-comment {
-  padding: 14px 18px 60px;
+  padding: 14px 18px;
   width: 100%;
   height: 91px;
 
@@ -340,7 +388,6 @@
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 8px;
   resize: none;
-  overflow-y: auto;
 
   background-color: transparent;
   outline: transparent;
@@ -348,12 +395,21 @@
   transition: border-color var(--transition-properties);
 }
 
+/* == Tablet, Desktop == */
+
+@media screen and (min-width: 768px) {
+  .modal-buy-comment {
+    padding: 22px 24px;
+    height: 137px;
+    border-radius: 13px;
+  }
+}
+
 /* ========= Modal Buy Now Submit Button Styles ========= */
 
 .modal-buy-submit-btn {
   padding: 12px 28px;
   min-width: 109px;
-  height: 41px;
 
   background-color: var(--accent-color);
   border: none;
@@ -363,8 +419,8 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
-  color: #ffffff;
-  cursor: pointer;
+  color: var(--secondary-text-decr);
+
   transition: background-color var(--transition-properties),
     color var(--transition-properties);
 }
@@ -373,6 +429,13 @@
 .modal-buy-submit-btn:focus {
   color: var(--accent-color);
   background-color: var(--btn-bg-color);
+}
+
+@media screen and (min-width: 768px) {
+  .modal-buy-submit-btn {
+    padding: 14px 40px;
+    min-width: 133px;
+  }
 }
 
 /* .is-hidden {
