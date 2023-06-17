@@ -48,11 +48,23 @@
   color: #111111;
 }
 
-.unique-components-list-link {
+.unique-components-list-item {
   border-radius: 15px;
-  padding: 28px;
 }
 
+.unique-components-list-item:nth-child(1) {
+  background-color: #fd9222;
+  color: #ffffff;
+}
+
+.unique-components-list-item:nth-child(3) {
+  background-color: #1e1823;
+  color: #ffffff;
+}
+
+.card-container {
+  padding: 28px;
+}
 /* ========375========= */
 
 @media screen and (min-width: 375px) {
