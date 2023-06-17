@@ -21,7 +21,7 @@
 }
 
 .our-products-text-span {
-    color: var(#FD9222);
+    color: #FD9222;
 }
 
 .products-card-list {
@@ -129,7 +129,7 @@
     width: 28px;
     height: 13px;
     border-radius: 7px;
-    background: var(#FD9222);
+    background: #FD9222;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
