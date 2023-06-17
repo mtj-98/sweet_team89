@@ -1,10 +1,10 @@
-.container {
+/* .container {
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
   padding-right: 20px;
-}
+} */
 
 @media screen and (max-width: 767px) {
   .container {
@@ -56,6 +56,8 @@
   line-height: 1.28;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+
+  margin-left: 28px;
 }
 /* ==============/TEXT================ */
 
@@ -77,6 +79,9 @@
 .unique-components-list-item {
   border-radius: 15px;
 }
+/* .unique-components-list-item {
+  border-radius: 15px;
+}
 
 .list-link-container {
   width: 335px;
@@ -89,8 +94,9 @@
   height: 171px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 28px;
   margin-bottom: 25px;
-}
+} */
 
 /* ========375========= */
 
@@ -112,9 +118,39 @@
     margin-bottom: 32px;
   }
 
+  .list-link-container {
+    width: 335px;
+    height: 270px;
+  }
+
+  .list-img-wrapper {
+    display: inline-block;
+    margin-top: 28px;
+    margin-bottom: 25px;
+    margin-left: 56px;
+    max-width: 224px;
+    max-height: 171px;
+  }
+
   .unique-components-list-item:not(:last-child) {
     margin-bottom: 20px;
   }
+  /* .unique-components-title {
+    margin-bottom: 24px;
+    width: 283px;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+  }
+
+  .text-section-unique-components {
+    margin-bottom: 32px;
+  }
+
+  .unique-components-list-item:not(:last-child) {
+    margin-bottom: 20px;
+  } */
 }
 
 /* ==============768================ */
@@ -135,14 +171,23 @@
     width: 486px;
     margin-bottom: 50px;
   }
-}
+
+  .list-link-container {
+    width: 336px;
+    height: 270px;
+  }
+
+  .unique-components-list {
+    display: flex;
+  }
+  /*
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .unique-components-list {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
-  }
+  } */
 }
 
 /* ==================1200===================== */
@@ -152,7 +197,7 @@
     padding: 128px 0;
   }
 
-  .unique-components-list {
+  /* .unique-components-list {
     display: flex;
     gap: 19px;
   }
@@ -169,5 +214,5 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 25px;
-  }
+  } */
 }
