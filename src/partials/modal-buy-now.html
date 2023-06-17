@@ -1,11 +1,11 @@
 <!-- ========= Modal Buy Now ========= -->
 
-<div class="backdrop-modal is-hidden" data-modal>
+<div class="backdrop-modal is-hidden" data-modal-buy-now>
   <div class="modal-buy-now">
-    <button class="modal-buy-close-btn" type="button" data-modal-close>
+    <button class="modal-buy-close-btn" type="button" data-modal-buy-now-close>
       <svg
         class="icon-modal-buy-close"
-        aria-label="modal close button"
+        aria-label="icon close buy now modal window"
         width="14"
         height="14"
       >
@@ -29,6 +29,7 @@
                 ../img/order-buy/desktop-tablet/choco-order-desk-tabl-1@2x-min.jpg 2x
               "
               media="(min-width: 1200px)"
+              type="image/jpeg"
             />
             <!-- TABLET -->
             <source
@@ -37,6 +38,7 @@
                 ../img/order-buy/desktop-tablet/choco-order-desk-tabl-1@2x-min.jpg 2x
               "
               media="(min-width: 768px)"
+              type="image/jpeg"
             />
             <!-- MOBILE -->
             <source
@@ -45,6 +47,7 @@
                 ../img/order-buy/mobile/choco-order-mobile-1@2x-min.jpg 2x
               "
               media="(max-width: 767px)"
+              type="image/jpeg"
             />
             <img
               src="../img/order-buy/mobile/choco-order-mobile-1-min.jpg"
@@ -64,6 +67,7 @@
                 ../img/order-buy/desktop-tablet/choco-order-desk-tabl-2@2x-min.jpg 2x
               "
               media="(min-width: 1200px)"
+              type="image/jpeg"
             />
             <!-- TABLET -->
             <source
@@ -72,6 +76,7 @@
                 ../img/order-buy/desktop-tablet/choco-order-desk-tabl-2@2x-min.jpg 2x
               "
               media="(min-width: 768px)"
+              type="image/jpeg"
             />
             <!-- MOBILE -->
             <source
@@ -80,6 +85,7 @@
                 ../img/order-buy/mobile/choco-order-mobile-2@2x-min.jpg 2x
               "
               media="(max-width: 767px)"
+              type="image/jpeg"
             />
             <img
               src="../img/order-buy/mobile/choco-order-mobile-2-min.jpg"
@@ -99,6 +105,7 @@
                 ../img/order-buy/desktop-tablet/choco-order-desk-tabl-3@2x-min.jpg 2x
               "
               media="(min-width: 1200px)"
+              type="image/jpeg"
             />
             <!-- TABLET -->
             <source
@@ -107,6 +114,7 @@
                 ../img/order-buy/desktop-tablet/choco-order-desk-tabl-3@2x-min.jpg 2x
               "
               media="(min-width: 768px)"
+              type="image/jpeg"
             />
             <!-- MOBILE -->
             <source
@@ -115,6 +123,7 @@
                 ../img/order-buy/mobile/choco-order-mobile-3@2x-min.jpg 2x
               "
               media="(max-width: 767px)"
+              type="image/jpeg"
             />
             <img
               src="../img/order-buy/mobile/choco-order-mobile-3-min.jpg"
@@ -226,7 +235,12 @@
           ></textarea>
         </div>
       </div>
-      <button class="modal-buy-submit-btn" type="submit" data-modal-close>
+      <button
+        class="modal-buy-submit-btn"
+        type="submit"
+        aria-label="button to submit and close buy now modal window"
+        data-modal-buy-now-close
+      >
         Submit
       </button>
     </form>
