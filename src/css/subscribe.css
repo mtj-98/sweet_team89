@@ -36,7 +36,6 @@
 }
 
 .subscribe-button {
-    align-items: center;
     min-height: 50px;
     min-width: 172px;
     padding: 14px 40px;
@@ -47,6 +46,13 @@
     font-weight: 600;
     font-size: 18px;
     line-height: 1.22;
+    transition: var(--transition-properties);
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+    background-color: #FCF1E0;
+    color: var(--accent-color);
 }
 
 .subscribe-section {
