@@ -65,7 +65,11 @@
     display: none;
   }
 }
-
+@media screen and (max-width: 767px) {
+  .top-sellers-list-pictures:first-child {
+    margin-bottom: 32px;
+  }
+}
 @media screen and (min-width: 375px) {
   .top-sellers-pictures {
     width: 335px;
@@ -75,11 +79,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .top-sellers-list-pictures:first-child {
-    margin-bottom: 32px;
-  }
-}
+
 
 /* tablet */
 @media screen and (min-width: 768px) {
