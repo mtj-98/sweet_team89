@@ -48,9 +48,9 @@
   color: #111111;
 }
 
-.unique-components-list-item {
-  background-color: #fd9222;
+.unique-components-list-link {
   border-radius: 15px;
+  padding: 28px;
 }
 
 /* ========375========= */
@@ -67,6 +67,10 @@
 
   .text-section-unique-components {
     margin-bottom: 32px;
+  }
+
+  .unique-components-list-item:not(:last-child) {
+    margin-bottom: 20px;
   }
 }
 
