@@ -37,7 +37,6 @@
   --bg-color-secondary: #1e1823;
   --modal-bg-color: #fafafa;
   --btn-bg-color: #fcf1e0;
-  --main-bg-color: #e2e2e2;
   --secondary-text-decr: #ffffff;
   --transition-properties: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -80,7 +79,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: var(--main-bg-color);
+  background-color: var(--modal-bg-color);
   color: var(--text-color-discr);
   font-size: 14px;
   line-height: 1.29;
