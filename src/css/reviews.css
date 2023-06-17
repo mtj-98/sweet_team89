@@ -65,6 +65,12 @@
   align-items: center;
   justify-content: center;
 }
+.reviews-open-btn:hover,
+.reviews-open-btn:focus {
+  background: var(--accent-color);
+  color: var(--secondary-text-decr);
+  line-height: calc(22 / 18);
+}
 .reviews-slider {
   display: flex;
   gap: 13px;
