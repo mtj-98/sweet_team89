@@ -175,6 +175,7 @@
   background: #fafafa;
 }
 
+
 /* tablet and desktop */
 @media screen and (min-width: 768px) {
   .modal-explore-form {
@@ -221,5 +222,9 @@
     min-width: 117px;
     padding: 14px 40px;
 
+  }
+
+  .br-about {
+    display: none;
   }
 }
