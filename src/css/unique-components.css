@@ -1,3 +1,87 @@
-.text-section {
-  color: brown;
+.container {
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .container {
+    width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.unique-components-title {
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: #111111;
+}
+
+.unique-components-title-span {
+  color: #fd9222;
+}
+
+.text-section-unique-components {
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: -0.02em;
+  color: #111111;
+}
+
+.unique-components-list-item {
+  background-color: #fd9222;
+  border-radius: 15px;
+}
+
+/* ========375========= */
+
+@media screen and (min-width: 375px) {
+  .unique-components-title {
+    margin-bottom: 24px;
+    width: 283px;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+  }
+
+  .text-section-unique-components {
+    margin-bottom: 32px;
+  }
+}
+
+/* ==============768================ */
+
+@media screen and (min-width: 768px) {
+  .unique-components-title {
+    margin-bottom: 28px;
+    width: 411px;
+    font-size: 24px;
+    line-height: 1.16;
+  }
+
+  .text-section-unique-components {
+    width: 486px;
+    margin-bottom: 50px;
+  }
 }
