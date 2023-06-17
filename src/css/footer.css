@@ -18,21 +18,16 @@
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
-  letter-spacing: -0.02em;
 
   text-align: left;
 
-  color: #fff;
+  color: var(--secondary-text-decr);
 }
 
 .footer-slogan-brand {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
-
-  letter-spacing: -0.02em;
-
-  color: var(--accent-color);
 }
 
 .footer-top-wrapper {
@@ -46,10 +41,11 @@
 }
 
 .footer-contacts-text {
-  font-weight: 500;
-  line-height: 1.29;
   margin-bottom: 14px;
-  color: #fff;
+
+  font-weight: 500;
+
+  color: var(--secondary-text-decr);
 }
 
 .footer-contacts-item:not(:last-child) {
@@ -58,9 +54,9 @@
 
 .footer-contact-link {
   font-style: normal;
-  line-height: 1.29;
 
-  color: #fff;
+  color: var(--secondary-text-decr);
+  transition: var(--transition-properties);
 }
 
 .footer-contact-link:hover,
@@ -90,18 +86,20 @@
   display: flex;
   width: 100%;
   height: 100%;
-  color: #fff;
+  color: var(--secondary-text-decr);
   transition: color 500ms ease-out;
+}
+
+.footer-social-media-item {
+  stroke-width: 1.5px;
 }
 
 .footer-icon-instagram {
   fill: currentColor;
-  stroke-width: 1.5px;
 }
 
 .footer-icon-twitter {
   stroke: currentColor;
-  stroke-width: 1.5px;
 }
 .footer-social-media-link:hover,
 .footer-social-media-link:focus {
@@ -117,9 +115,8 @@
 .footer-nav-link {
   font-weight: 500;
   line-height: 1.14;
-  letter-spacing: -0.02em;
 
-  color: #fff;
+  color: var(--secondary-text-decr);
 
   transition: color 500ms ease-in;
 }
@@ -159,6 +156,8 @@
   .footer-social-media-item {
     width: 24px;
     height: 24px;
+
+    stroke-width: 2px;
   }
 
   .footer-nav:before {
