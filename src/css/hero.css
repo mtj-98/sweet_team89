@@ -1,15 +1,13 @@
 /* mobile */
-
 .section-hero {
   padding-bottom: 72px;
+
 }
 
 .hero {
-  background: linear-gradient(
-      180deg,
+  background: linear-gradient(180deg,
       rgba(17, 17, 17, 0) 0%,
-      rgba(17, 17, 17, 0.4) 100%
-    ),
+      rgba(17, 17, 17, 0.4) 100%),
     url(../img/hero/hero-mobile-min.jpg);
   background-repeat: no-repeat;
   background-color: var(--bg-color-secondary);
@@ -17,6 +15,8 @@
   border-radius: 30px;
   padding-top: 395px;
   padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .hero-dicr {
@@ -26,152 +26,53 @@
   letter-spacing: -0.03em;
   color: var(--secondary-text-decr);
   margin-bottom: 32px;
+  max-width: 295px;
 }
 
 /* btn */
 
 .button-hero {
-    display: flex;
-    align-items: baseline;
-    justify-content: flex-start;
-    margin-top: 32px;
-    gap: 14px;
-    flex-wrap: nowrap;
-    flex-direction: row;
-  }
-  
-  .button-hero-buy {
-    min-width: 120px;
-    background: #FD9222;
-    padding: 12px 28px;
-    font-family: Montserrat;
-    font-size: 14px;
-    line-height: 1.21;
-    border-radius: 100px;
-    color: var(--secondary-text-decr);
-    border: none;
-  }
-
-  
-
-/* tablet */
-
-@media screen and (min-width: 768px) {
-
-}
-
-
-
-  /* 
-  .button-hero-two {
-    border-radius: 100px;
-    padding: 14px 40px;
-    display: block;
-    font-family: Montserrat;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #ffffff;
-  }
-
-  .button-hero-how {
-    background: none;
-    border: 1px solid #ffffff;
-  }
-  
-  .button-hero-two {
-    border-radius: 100px;
-  
-    height: 45px;
-    padding: 14px 40px;
-    display: block;
-  
-    font-family: Montserrat;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #ffffff;
-  }
-
-  .button-hero-right {
-    margin-left: auto;
-  }  */
-
-/* /btn */
-
-
-/* .hero-title {
-  font-family: Montserrat;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 1.21;
-  letter-spacing: -0.03em;
-  color: #ffffff;
-  max-width: 484px;
-} */
-
-/* .section-hero {
-    width: 1136px;
-    height: 600px;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 30px;
-  } */
-
-/* .hero {
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-bottom: 40px;
-  padding-top: 381px;
-} */
-
-/* .button-hero {
   display: flex;
-  align-items: baseline;
-  justify-content: flex-start;
   margin-top: 32px;
   gap: 14px;
-  flex-wrap: nowrap;
-  flex-direction: row;
+  flex-wrap: wrap;
+
 }
 
 .button-hero-buy {
-  background: #fd9222;
+  background: #FD9222;
+  padding: 12px 28px;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.21;
+  border-radius: 100px;
+  color: var(--secondary-text-decr);
   border: none;
 }
 
 .button-hero-how {
+  padding: 12px 28px;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 1.21;
+  border-radius: 100px;
+  color: var(--secondary-text-decr);
   background: none;
   border: 1px solid #ffffff;
+
 }
 
-.button-hero-two {
-  border-radius: 100px;
-
-  height: 45px;
-  padding: 14px 40px;
-  display: block;
-
-  font-family: Montserrat;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  color: #ffffff;
-}
-.button-hero-right {
-  margin-left: auto;
-}
 .button-hero-footer {
   position: relative;
   display: flex;
+
   align-items: center;
+
 
   font-family: Montserrat;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.28;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: -0.03em;
   color: #ffffff;
 
@@ -183,55 +84,107 @@
   fill: var(--accent-color);
   padding: 3px;
 }
+
 .check-mark-icon {
   border-radius: 50%;
-  margin-bottom: 22px;
   height: 28px;
   width: 28px;
   background-color: var(--secondary-text-decr);
   padding: 6px;
-} */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* tablet */
-/* @media screen and (min-width: 768px) and (max-width: 1157px) {
-  .section-hero {
-    background: linear-gradient(
-        180deg,
+
+@media screen and (min-width: 768px) {
+
+  .hero {
+    background: linear-gradient(180deg,
         rgba(17, 17, 17, 0) 0%,
-        rgba(17, 17, 17, 0.4) 100%
-      ),
+        rgba(17, 17, 17, 0.4) 100%),
       url(../img/hero/hero-tablet-min.jpg);
     width: 768px;
     margin-left: auto;
     margin-right: auto;
     background-size: cover;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-top: 381px;
+  }
+
+  .hero-dicr {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    max-width: 484px;
+  }
+
+  /* btn */
+  .button-hero {
+    flex-wrap: nowrap;
+    align-items: center
+  }
+
+  .button-hero-footer {
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.28;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+
+    background: none;
+    border: none;
+
+  }
+
+  .button-hero-right {
+    margin-left: auto;
+  }
+
+  .button-hero-left {
+    border-radius: 100px;
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    color: #ffffff;
+  }
+
+  /* icon */
+  .modal-icon {
+    width: 22px;
+    height: 22px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .check-mark-icon {
+    width: 38px;
+    height: 38px;
+    padding: 6px;
+
   }
 }
 
+/* Desktop */
 @media screen and (min-width: 1158px) {
-  .section-hero {
-    background: linear-gradient(
-        180deg,
+  .hero {
+    background: linear-gradient(180deg,
         rgba(17, 17, 17, 0) 0%,
-        rgba(17, 17, 17, 0.4) 100%
-      ),
+        rgba(17, 17, 17, 0.4) 100%),
       url(../img/hero/hero-desktop-min.jpg);
-  }
-}
-
-
-@media screen and (man-width: 374px) {
-  .section-hero {
-    background: linear-gradient(
-        180deg,
-        rgba(17, 17, 17, 0) 0%,
-        rgba(17, 17, 17, 0.4) 100%
-      ),
-      url(../img/hero/hero-mobile-min.jpg);
-    background-repeat: no-repeat;
-    width: 100%;
     background-size: cover;
-    padding-bottom: 0;
+    width: 1158px;
+    background-repeat: no-repeat;
   }
 }
- */
