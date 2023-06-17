@@ -1,0 +1,148 @@
+.top-sellers-section {
+  padding-bottom: 72px;
+}
+.t-s-section-title {
+  margin-bottom: 32px;
+}
+
+.top-sellers-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-sellers-pictures {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.top-sellers-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--text-color-discr);
+}
+
+.top-sellers-list {
+  margin-bottom: 20px;
+}
+
+.top-sellers-btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 12px 28px;
+  min-width: 120px;
+
+  background: var(--accent-color);
+  border-radius: 100px;
+
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.22;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+
+  transition: background-color var(--transition-properties);
+}
+
+.top-sellers-btn:hover,
+.top-sellers-btn:focus {
+  background: var(--btn-bg-color);
+  color: var(--accent-color);
+}
+/* mobile 375 */
+@media screen and (max-width: 1199px) {
+  .top-sellers-pictures-three {
+    display: none;
+  }
+  .t-s-text-tablet-desktop {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .top-sellers-list-pictures:first-child {
+    margin-bottom: 32px;
+  }
+  .top-sellers-pictures-one {
+margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .top-sellers-pictures {
+    width: 335px;
+  }
+  .top-sellers-text {
+    width: 306px;
+  }
+}
+
+
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  .top-sellers-section {
+    padding-bottom: 100px;
+  }
+
+  .top-sellers-list {
+    flex-direction: row;
+    margin-bottom: 32px;
+  }
+
+  .top-sellers-pictures {
+    width: 344px;
+  }
+  .t-s-text-mobile {
+    display: none;
+  }
+  .t-s-text-tablet-desktop {
+    display: block;
+  }
+
+  .t-s-section-title {
+    margin-bottom: 50px;
+  }
+
+  .top-sellers-text-and-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .top-sellers-btn {
+    width: 162px;
+    height: 50px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .top-sellers-list-pictures:first-child {
+    margin-right: 16px;
+  }
+}
+
+/* desktop */
+
+@media screen and (min-width: 1200px) {
+  .top-sellers-section {
+    padding-bottom: 128px;
+  }
+  .top-sellers-pictures {
+    width: 368px;
+  }
+  .top-sellers-list {
+    gap: 16px;
+  }
+  .t-s-text-tablet-desktop {
+    width: 407px;
+  }
+}
