@@ -1,5 +1,4 @@
-/* Section HIM */
-
+/* ############### HIM ############### */
 .him-container {
     background-color: var(--modal-bg-color);
     padding-bottom: 128px;
@@ -94,7 +93,6 @@
 .him-img-item {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
     border-radius: 15px;
-
 }
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
@@ -197,9 +195,6 @@
     align-items: flex-start;
     gap: 24px;
     text-align: left;
-
-    /* list-style: disc;
-    list-style-image: url(./img/check-mark.jpg); */
 }
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
@@ -207,9 +202,7 @@
         gap: 18px;
     }
 }
-
 /* Позиціонування маркерів */
-/* Варіант 1 */
 
 .him-menu-item {
     position: relative;
@@ -225,31 +218,9 @@
     border: 1px solid #ECEDED;
     border-radius: 50%;
     position: absolute;
-    /* margin-top: 5px; */
     margin-right: 8px;
     left: -8px;
     top: 5px;
     transform: translateX(-4px);
 }
-
-
-/* Варіант 2 */
-
-/* .description-proces-item {
-    display: block;
-}     */
-    /* position: relative; */
-
-
-/* .icon-list-circle {
-    position: absolute;
-    background-color: #4C4C4C;
-    border: 1px solid #ECEDED;
-    border-radius: 50%;
-    margin-top: 5px;
-    margin-right: 8px;
-    transform: translate(-200%, -450%);
-} */
-    /* top: 25%; */
-    /* left: 150%; */
-
+/* ############### /HIM ############### */
