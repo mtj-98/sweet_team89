@@ -79,6 +79,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--text-color-discr);
   transition: background-color var(--transition-properties),
     color var(--transition-properties);
 }
