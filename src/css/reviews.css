@@ -9,10 +9,8 @@
 .accent-color-title {
   color: var(--accent-color);
 }
-.section-title-reviews {
+.reviews {
   margin-bottom: 32px;
-  line-height: calc(24 / 20);
-  text-transform: uppercase;
 }
 .reviews-list {
   display: flex;
@@ -73,7 +71,7 @@
   border: 1px solid #fd9222;
   border-radius: 100px;
   padding: 12px 28px;
-
+  background-color: transparent;
   font-weight: 600;
   line-height: calc(17 / 14);
   max-width: 165px;
@@ -81,10 +79,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color var(--transition-properties),
+    color var(--transition-properties);
 }
 .reviews-open-btn:hover,
 .reviews-open-btn:focus {
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   color: var(--secondary-text-decr);
 }
 .reviews-slider {
@@ -145,9 +145,11 @@
   .six {
     display: none;
   }
-  .section-title-reviews {
+  .reviews-section {
+    padding-bottom: 100px;
+  }
+  .reviews {
     margin-bottom: 50px;
-    line-height: calc(28 / 24);
   }
   .reviews-list {
     width: 704px;
@@ -187,7 +189,9 @@
   .six {
     display: none;
   }
-
+  .reviews-section {
+    padding-bottom: 128px;
+  }
   .reviews-list {
     width: 1136px;
     gap: 28px;
