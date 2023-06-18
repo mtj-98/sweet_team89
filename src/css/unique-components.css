@@ -166,8 +166,8 @@ margin-right: auto;
   overflow: hidden;
 }
 
-.unique-components-list-link:hover .overlay-card,
-.unique-components-list-link :focus .overlay-card {
+.list-link-container:hover .overlay-card,
+.list-link-container:focus .overlay-card {
   transform: translateY(0);
 }
 
