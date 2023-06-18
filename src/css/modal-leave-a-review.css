@@ -1,0 +1,252 @@
+/* Bacdrop */
+.bacdrop-modal-explore {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity var(--transition-propertie),
+    visibility var(--transition-propertie);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+/* Modal window */
+/* mobile */
+.modal-window-explore {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 95%;
+  max-width: 311px;
+  max-height: 471px;
+  background: #fafafa;
+  border-radius: 15px;
+  padding: 32px 24px;
+}
+
+@media screen and (min-width: 375px) {
+  .modal-window-explore {
+    width: 100%;
+  }
+}
+
+/* tablet and desktop */
+@media screen and (min-width: 768px) {
+  .modal-window-explore {
+    width: 100%;
+    height: 100%;
+    max-width: 517px;
+    max-height: 628px;
+    padding: 40px;
+  }
+}
+
+/* Close button modal window */
+/* mobile */
+.modal-btn-explore-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  border: transparent;
+  border-radius: 50%;
+  padding: 0;
+
+  stroke: var(--text-color-discr);
+  transition: background-color var(--transition-properties);
+}
+.size-btn-explore-close-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.modal-btn-explore-close:hover,
+.modal-btn-explore-close:focus {
+  background-color: var(--btn-bg-color);
+  border-radius: 50%;
+  stroke: var(--accent-color);
+}
+
+/* tablet and desktop */
+@media screen and (min-width: 768px) {
+  .modal-btn-explore-close {
+    top: 24px;
+    right: 24px;
+  }
+
+  .size-btn-explore-close-icon {
+    width: 22px;
+    height: 22px;
+  }
+  .modal-btn-explore-close {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Title modal window */
+/* mobile */
+.title-modal-explore {
+  width: 100%;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--text-color-discr);
+  margin-bottom: 32px;
+}
+.part-text-modal-explore {
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 375px) {
+  .title-modal-explore {
+    font-size: 20px;
+  }
+}
+
+
+
+
+/* tablet and desktop */
+@media screen and (min-width: 768px) {
+  .title-modal-explore {
+    width: 298px;
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 40px;
+  }
+}
+
+/* Modal window form */
+/* mobile */
+.modal-explore-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.rew-phone-number {
+  position: relative;
+}
+
+.flag-number-part {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transform: translateY(-50%);
+}
+
+.modal-explore-input.number-imput {
+  padding-left: 100px;
+}
+
+.modal-explore-input.modal-form-box-textarea::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.flag-number-part::after {
+  position: absolute;
+  content: '';
+  background-color: rgba(17, 17, 17, 0.05);
+  width: 1px;
+  height: 24px;
+  left: 73px;
+}
+
+.modal-form-box-textarea {
+  width: 100%;
+  height: 91px;
+  padding: 14px 18px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 8px;
+  background: #fafafa;
+  resize: none;
+}
+
+.modal-explore-input {
+  width: 100%;
+  padding: 14px 18px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  background: #fafafa;
+}
+
+/* tablet and desktop */
+@media screen and (min-width: 768px) {
+  .modal-explore-form {
+    gap: 18px;
+    margin-bottom: 18px;
+  }
+
+  .modal-explore-input {
+    width: 437px;
+    padding: 22px;
+  }
+
+  .modal-form-box-textarea {
+    width: 100%;
+    height: 137px;
+    padding-top: 22px;
+  }
+}
+
+/* Submit button modal window */
+/* mobile */
+.modal-explore-form-submit {
+  min-width: 93px;
+  padding: 12px 28px;
+  background: #fd9222;
+  border: transparent;
+  border-radius: 100px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #ffffff;
+
+  transition: background-color var(--transition-properties);
+}
+
+.modal-explore-form-submit:hover,
+.modal-explore-form-submit:focus {
+  background-color: var(--btn-bg-color);
+  color: var(--accent-color);
+}
+
+/* tablet and desktop */
+@media screen and (min-width: 768px) {
+  .modal-explore-form-submit {
+    min-width: 117px;
+    padding: 14px 40px;
+  }
+
+  .br-about {
+    display: none;
+  }
+}
