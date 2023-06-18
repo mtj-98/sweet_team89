@@ -34,8 +34,8 @@
 /* mobile */
 @media screen and (min-width: 375px) {
   .modal-window-explore {
-    width: 311px;
-    height: 471px;
+    max-width: 311px;
+    max-height: 471px;
   }
 }
 /* tablet and desktop */
