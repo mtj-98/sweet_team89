@@ -1,6 +1,7 @@
 .top-sellers-section {
   padding-bottom: 72px;
 }
+
 .t-s-section-title {
   margin-bottom: 32px;
 }
@@ -56,6 +57,7 @@
   background: var(--btn-bg-color);
   color: var(--accent-color);
 }
+
 /* mobile 375 */
 @media screen and (max-width: 1199px) {
   .top-sellers-pictures-three {
@@ -65,6 +67,7 @@
     display: none;
   }
 }
+
 @media screen and (max-width: 767px) {
   .top-sellers-list-pictures:first-child {
     margin-bottom: 32px;
@@ -83,19 +86,15 @@ margin-bottom: 20px;
   }
 }
 
-
-
 /* tablet */
 @media screen and (min-width: 768px) {
   .top-sellers-section {
     padding-bottom: 100px;
   }
-
   .top-sellers-list {
     flex-direction: row;
     margin-bottom: 32px;
   }
-
   .top-sellers-pictures {
     width: 344px;
   }
@@ -105,17 +104,14 @@ margin-bottom: 20px;
   .t-s-text-tablet-desktop {
     display: block;
   }
-
   .t-s-section-title {
     margin-bottom: 50px;
   }
-
   .top-sellers-text-and-btn {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-
   .top-sellers-btn {
     width: 162px;
     height: 50px;
