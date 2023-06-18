@@ -1,0 +1,236 @@
+/* ==============TEXT================ */
+.unique-components-title {
+margin-bottom: 24px;
+max-width: 283px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.text-section-unique-components {
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: -0.02em;
+  color: #111111;
+}
+
+.text-card-subtitle {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin-left: 28px;
+}
+
+/* ==============/TEXT================ */
+.unique-components-list-item:nth-child(1) {
+  background-color: #fd9222;
+  color: #ffffff;
+}
+
+.unique-components-list-item:nth-child(3) {
+  background-color: #1e1823;
+  color: #ffffff;
+}
+
+.unique-components-list-item:nth-child(even) {
+  background: #ffffff;
+  border: 1px solid #fd9222;
+}
+
+.unique-components-list-item {
+  border-radius: 15px;
+}
+
+.list-link-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* ===========================================max767 */
+@media screen and (max-width: 767px) {
+  .section-unique-components {
+    padding: 72px 0;
+  }
+
+  .text-section-unique-components {
+    margin-bottom: 32px;
+    max-width: 335px;
+  }
+
+  .unique-components-list-item {
+    width: 335px;
+    height: 270px;
+  }
+
+  .unique-components-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .list-img-wrapper {
+    display: inline-block;
+    margin-top: 28px;
+    margin-bottom: 25px;
+    margin-left: 56px;
+    max-width: 224px;
+    max-height: 171px;
+  }
+}
+
+/* ===========================================min768 */
+@media screen and (min-width: 768px) {
+  .section-unique-components {
+    padding: 100px 0;
+  }
+
+  .unique-components-title {
+    margin-bottom: 28px;
+    max-width: 411px;
+}
+
+  .text-section-unique-components {
+    width: 486px;
+    margin-bottom: 50px;
+  }
+
+  .unique-components-list-item {
+    width: 336px;
+    height: 270px;
+  }
+
+  .unique-components-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .list-img-wrapper {
+    display: inline-block;
+    margin-top: 28px;
+    margin-bottom: 25px;
+    margin-left: 56px;
+    max-width: 224px;
+    max-height: 171px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width:1199px) {
+.item-shokolate {
+    order: 1;
+}
+.item-milk {
+    order: 3;
+}
+.item-nuts {
+    order: 4;
+}
+.item-coffee {
+    order: 2;
+}
+}
+
+/* ====================================================min1200 */
+@media screen and (min-width: 1200px) {
+  .section-unique-components {
+    padding: 128px 0;
+  }
+
+  .unique-components-list-item {
+    width: 270px;
+    height: 270px;
+  }
+
+  .unique-components-list {
+    flex-wrap: nowrap;
+    gap: 19px;
+  }
+
+  .list-img-wrapper {
+    display: inline-block;
+    margin-top: 28px;
+    margin-bottom: 36px;
+    margin-left: 28px;
+    max-width: 206px;
+    max-height: 160px;
+  }
+}
+
+/* ============---------OVERLAY-------------======================== */
+.list-link-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.unique-components-list-link:hover .overlay-card,
+.unique-components-list-link :focus .overlay-card {
+  transform: translateY(0);
+}
+
+.overlay-card {
+  width: 100%;
+  height: 100%;
+  padding: 28px;
+  background-color: #fff;
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  overflow-y: scroll;
+  transform: translateY(100%);
+  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subtitle-overlay {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: #111111;
+}
+
+.button-list {
+  display: flex;
+  gap: 6px;
+}
+
+.btn-overlay {
+  align-items: center;
+  padding: 6px 16px;
+  min-width: 81px;
+  min-height: 24px;
+  background: #fafafa;
+  border: 1px solid #fd9222;
+  border-radius: 35px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  margin-top: 14px;
+  color: #111111;
+}
+
+.btn-overlay:hover,
+.btn-overlay:focus {
+  color: #ffffff;
+  background-color: #fd9222;
+}
+
+/* ============---------OVERLAY-------------======================== */
