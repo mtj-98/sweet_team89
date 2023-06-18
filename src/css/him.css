@@ -2,11 +2,20 @@
 
 .him-container {
     background-color: var(--modal-bg-color);
+    padding-bottom: 128px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
     .him-container {
         width: 100%;
+        padding-bottom: 92px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .him-container {
+        width: 100%;
+        padding-bottom: 132px;
     }
 }
 
@@ -42,7 +51,7 @@
     text-align: center;
     margin-top: 128px;
     margin-bottom: 50px;
-    
+
     /* width: 350px; */
     /* font-weight: 600;
     line-height: 1.16;
@@ -146,7 +155,7 @@
 .him-img-item {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
     border-radius: 15px;
-    
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
@@ -174,38 +183,38 @@
 /* Іконка PLAY */
 
 .icon-play {
-position: absolute;
+    position: absolute;
 
-display: flex;
-align-items: center;
-justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-width: 44px;
-height: 44px;
+    width: 44px;
+    height: 44px;
+    padding: 11px 8px 9px 13px;
+    /* padding-left: 0;
+padding-right: 0; */
+    fill: var(--secondary-text-decr);
+    background-color: transparent;
 
-padding-left: 0;
-padding-right: 0;
-fill: var(--secondary-text-decr);
-background-color: transparent;
-
-border-radius: 50%;
-border-width: 1px;
-border-color: var(--secondary-text-decr);
-box-sizing: border-box;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border-width: 1px;
+    border-color: var(--secondary-text-decr);
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .description-proces {
     width: 516px;
-    padding: 32px 32px 34px 32px;
+    padding: 32px 32px 0px 32px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
     .description-proces {
         width: 100%;
-        padding: 20px 14px 20px 14px;
+        padding: 20px 14px 0px 14px;
     }
 }
 
@@ -213,7 +222,7 @@ transform: translate(-50%, -50%);
     .description-proces {
         max-width: 335px;
         width: 100%;
-        padding: 20px 14px 20px 14px;
+        padding: 20px 14px 0px 14px;
     }
 }
 
@@ -221,7 +230,6 @@ transform: translate(-50%, -50%);
     .description-proces {
         max-width: 614px;
         width: 100%;
-        padding-bottom: 32px;
     }
 }
 
@@ -253,7 +261,7 @@ transform: translate(-50%, -50%);
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
- 
+    position: relative;
 }
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
@@ -263,5 +271,52 @@ transform: translate(-50%, -50%);
 }
 
 .him-menu-item {
-    list-style-type: disc;
+    list-style-type: none;
+    box-sizing: border-box;
+
+
+    /* background-color: #4C4C4C;
+    border: 1px solid #ECEDED; */
+    /* Ellipse 1 */
+
+    /* box-sizing: border-box;
+
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: 0px;
+    top: 5px;
+
+    background: #4C4C4C;
+    border: 1px solid #ECEDED; */
+
 }
+
+/* .description-proces-item {
+    position: relative;
+} */
+
+.icon-list-circle {
+    content: icon;
+    position: absolute;
+    background-color: #4C4C4C;
+    border: 1px solid #ECEDED;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    /*  */
+}
+
+/* .current::after {
+    box-sizing: border-box;
+    width: 100%;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+} */
