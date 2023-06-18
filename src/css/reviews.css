@@ -9,20 +9,20 @@
 .accent-color-title {
   color: var(--accent-color);
 }
-.section-title {
+.section-title-reviews {
   margin-bottom: 32px;
   line-height: calc(24 / 20);
+  text-transform: uppercase;
 }
 .reviews-list {
   display: flex;
   width: 335px;
-  /* width: 100%; */
 }
 
 .reviews-list-card {
   display: block;
   width: 100%;
-  /* width: 335px; */
+
   height: 242px;
   margin-left: auto;
   margin-right: auto;
@@ -63,11 +63,12 @@
 .reviews-card-img {
   margin-bottom: 18px;
 
-  border-radius: 50%;
-
   margin-left: auto;
   margin-right: auto;
+
+  border-radius: 50%;
 }
+
 .reviews-open-btn {
   border: 1px solid #fd9222;
   border-radius: 100px;
@@ -133,6 +134,7 @@
     width: 100%;
   }
 }
+
 @media screen and (min-width: 768px) {
   .two {
     display: block;
@@ -143,7 +145,7 @@
   .six {
     display: none;
   }
-  .section-title {
+  .section-title-reviews {
     margin-bottom: 50px;
     line-height: calc(28 / 24);
   }
@@ -152,7 +154,7 @@
     gap: 16px;
   }
   .reviews-slider {
-    margin-top: 32px;
+    margin-top: 31px;
     margin-bottom: 50px;
   }
 
@@ -162,21 +164,19 @@
     padding: 14px 40px;
 
     line-height: calc(22 / 18);
-    max-width: 222px;
+    min-width: 222px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .reviews-card-overlay-desc {
-    padding-left: 16px;
-    padding-right: 16px;
+  .reviews-overlay-rectangle {
+    padding-left: 14px;
+    padding-right: 18px;
+    padding-bottom: 26px;
     width: 344px;
   }
 }
-/* @media screen and (max-width: 767px) {
- 
-} */
 @media screen and (min-width: 1200px) {
   .three {
     display: block;
@@ -192,22 +192,10 @@
     width: 1136px;
     gap: 28px;
   }
-  .reviews-card-overlay-desc {
+  .reviews-overlay-rectangle {
     padding-left: 24px;
     padding-right: 24px;
     width: 360px;
-  }
-
-  .reviews-open-btn {
-    border: 1px solid #fd9222;
-    border-radius: 100px;
-    padding: 14px 40px;
-
-    line-height: calc(22 / 18);
-    max-width: 222px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-bottom: 24px;
   }
 }
