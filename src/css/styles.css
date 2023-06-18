@@ -138,9 +138,8 @@ body {
 }
 
 .section-part-title {
-color: var(--accent-color);
+  color: var(--accent-color);
 }
-
 
 /* Tablet and Desktop title */
 @media screen and (min-width: 768px) {
