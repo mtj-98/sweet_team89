@@ -63,8 +63,8 @@
   height: 28px;
 
   background-color: transparent;
-  border: none;
-  cursor: pointer;
+  border: transparent;
+  border-radius: 50%;
 
   transition: background-color var(--transition-properties),
     border var(--transition-properties);
@@ -72,13 +72,12 @@
 
 .modal-buy-close-btn:hover,
 .modal-buy-close-btn:focus {
-  border-radius: 50%;
   background-color: var(--btn-bg-color);
 }
 
-.modal-buy-close-icon {
-  width: 12px;
-  height: 12px;
+.icon-modal-buy-close {
+  width: 16px;
+  height: 16px;
   stroke: var(--text-color-discr);
   transition: stroke var(--transition-properties);
 }
@@ -96,9 +95,9 @@
     height: 40px;
   }
 
-  .modal-buy-close-icon {
-    width: 14px;
-    height: 14px;
+  .icon-modal-buy-close {
+    width: 22px;
+    height: 22px;
   }
 }
 
@@ -137,7 +136,7 @@
 .modal-buy-products-list-item {
   padding: 8px 16px;
   background: var(--secondary-text-decr);
-  border: 1px solid rgba(17, 17, 17, 0.1);
+  border: 1px solid var(--input-border-color);
   border-radius: 15px;
   overflow: hidden;
 }
@@ -160,7 +159,7 @@
   font-weight: 600;
   text-align: center;
   background: var(--modal-bg-color);
-  border: 1px solid rgba(17, 17, 17, 0.1);
+  border: 1px solid var(--input-border-color);
   border-radius: 100px;
 }
 
@@ -202,7 +201,7 @@
     font-weight: 600;
     text-align: center;
     background: var(--modal-bg-color);
-    border: 1px solid rgba(17, 17, 17, 0.1);
+    border: 1px solid var(--input-border-color);
     border-radius: 100px;
   }
 }
@@ -222,7 +221,7 @@
   margin-bottom: 8px;
   font-weight: 500;
   line-height: 1.17;
-  color: #000000;
+  color: var(--label-text-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -304,12 +303,21 @@
   justify-content: flex-start;
   align-items: center;
   width: 74px;
-  box-shadow: 1.5px 0px 0px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 1.5px 0px 0px rgba(0, 0, 0, 0.1); */
+}
+
+.modal-buy-country-code::after {
+  position: absolute;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 1px;
+  height: 24px;
+  right: 1px;
 }
 
 .modal-buy-country-code-text {
   font-weight: 500;
-  color: #000000;
+  color: var(--label-text-color);
 }
 
 .modal-buy-card-logo {
@@ -437,9 +445,3 @@
     min-width: 133px;
   }
 }
-
-/* .is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-} */
