@@ -13,7 +13,7 @@ margin-right: auto;
   margin-left: auto;
   margin-right: auto;
   letter-spacing: -0.02em;
-  color: #111111;
+  color: var(--text-color-discr);
 }
 
 .text-card-subtitle {
@@ -27,18 +27,18 @@ margin-right: auto;
 
 /* ==============/TEXT================ */
 .unique-components-list-item:nth-child(1) {
-  background-color: #fd9222;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--secondary-text-decr);
 }
 
 .unique-components-list-item:nth-child(3) {
-  background-color: #1e1823;
-  color: #ffffff;
+  background-color: var(--bg-color-secondary);
+  color: var(--secondary-text-decr);
 }
 
 .unique-components-list-item:nth-child(even) {
-  background: #ffffff;
-  border: 1px solid #fd9222;
+  background: var(--secondary-text-decr);
+  border: 1px solid var(--accent-color);
 }
 
 .unique-components-list-item {
@@ -193,7 +193,7 @@ margin-right: auto;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   margin-bottom: 8px;
-  color: #111111;
+  color: var(--text-color-discr);
 }
 
 .button-list {
@@ -206,8 +206,8 @@ margin-right: auto;
   padding: 6px 16px;
   min-width: 81px;
   min-height: 24px;
-  background: #fafafa;
-  border: 1px solid #fd9222;
+  background:var(--modal-bg-color);
+  border: 1px solid var(--accent-color);
   border-radius: 35px;
   font-weight: 400;
   font-size: 10px;
@@ -224,13 +224,13 @@ margin-right: auto;
   line-height: 1.28;
   letter-spacing: -0.02em;
   margin-top: 14px;
-  color: #111111;
+  color: var(--text-color-discr);
 }
 
 .btn-overlay:hover,
 .btn-overlay:focus {
-  color: #ffffff;
-  background-color: #fd9222;
+  color: var(--secondary-text-decr);
+  background-color: var(--accent-color);
 }
 
 /* ============---------OVERLAY-------------======================== */
