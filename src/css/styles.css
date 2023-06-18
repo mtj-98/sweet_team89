@@ -31,7 +31,8 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  
+  --input-border-color: rgba(17, 17, 17, 0.1);
+  --label-text-color: #000000;
   --accent-color: #fd9222;
   --text-color-discr: #111111;
   --bg-color-secondary: #1e1823;
