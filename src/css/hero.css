@@ -40,7 +40,7 @@
 }
 
 .button-hero-buy {
-  background: #FD9222;
+  background: var(--accent-color);
   padding: 12px 28px;
   font-family: Montserrat;
   font-size: 14px;
@@ -48,6 +48,7 @@
   border-radius: 100px;
   color: var(--secondary-text-decr);
   border: none;
+  transition: background-color var(--transition-properties), color var(--transition-properties);
 }
 
 .button-hero-how {
@@ -58,7 +59,8 @@
   border-radius: 100px;
   color: var(--secondary-text-decr);
   background: none;
-  border: 1px solid #ffffff;
+  border: 1px solid var(--secondary-text-decr);
+  transform: background-color var(--transition-properties), color var(--transition-properties), border-color var(--transition-properties);
 
 }
 
@@ -74,36 +76,43 @@
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: -0.03em;
-  color: #ffffff;
+  color: var(--secondary-text-decr);
 
   background: none;
   border: none;
+  transition: color var(--transition-properties), background-color var(--transition-properties), fill var(--transition-properties);
 }
+
 .button-hero-buy:hover,
 .button-hero-buy:focus {
-background-color: #FCF1E0;
-color: #FD9222;
+  background-color: var(--btn-bg-color);
+  color: var(--accent-color);
 }
+
 .button-hero-how:hover,
 .button-hero-how:focus {
-  background-color: #E2E2E2;
-  color: #FD9222;
-  border-color: #FD9222;
+  background-color: var(--main-bg-color);
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
+
 .button-hero-footer:hover,
 .button-hero-footer:focus {
-  color: #FD9222;
+  color: var(--accent-color);
 }
+
 .button-hero-footer:hover .check-mark-icon,
 .button-hero-footer:focus .check-mark-icon {
-  background-color: #FD9222;
-  color: #FD9222;
+  background-color: var(--accent-color);
+  color: var(--accent-color);
 }
+
 .button-hero-footer:hover .check-mark-icon .modal-icon,
-.button-hero-footer:focus .check-mark-icon .modal-icon{
-  fill: #FFFFFF;
-  
+.button-hero-footer:focus .check-mark-icon .modal-icon {
+  fill: var(--secondary-text-decr);
+
 }
+
 /* icon */
 .modal-icon {
   fill: var(--accent-color);
@@ -120,14 +129,15 @@ color: #FD9222;
   align-items: center;
   justify-content: center;
   margin-left: 12px;
-  
+
 }
 
-@media screen and (min-width: 375px){
+@media screen and (min-width: 375px) {
   .button-hero-how {
     padding: 12px 28px;
   }
 }
+
 /* tablet */
 
 @media screen and (min-width: 768px) {
@@ -152,7 +162,7 @@ color: #FD9222;
     font-size: 28px;
     line-height: 1.21;
     letter-spacing: -0.03em;
-    color: #ffffff;
+    color: var(--secondary-text-decr);
     max-width: 484px;
   }
 
@@ -161,19 +171,22 @@ color: #FD9222;
     flex-wrap: nowrap;
     align-items: center
   }
+
   .button-hero-how {
     padding: 14px 40px;
   }
+
   .button-hero-buy {
     padding: 14px 40px;
   }
+
   .button-hero-footer {
     align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.28;
     letter-spacing: -0.03em;
-    color: #ffffff;
+    color: var(--secondary-text-decr);
 
     background: none;
     border: none;
@@ -190,7 +203,7 @@ color: #FD9222;
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
-    color: #ffffff;
+    color: var(--secondary-text-decr);
   }
 
   /* icon */
@@ -221,3 +234,39 @@ color: #FD9222;
     background-repeat: no-repeat;
   }
 }
+
+/* MOBILE HERO */
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767) {
+  .hero {
+    background-image: linear-gradient(180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%),
+      url(../img/hero/hero-mobile@2x-min.jpg);
+  }
+} 
+
+/* Tablet Hero */
+ @media screen and (min-device-pixel-ratio: 2) and (max-width: 1157px),
+screen and (min-resolution: 192dpi) and (max-width: 1157px),
+screen and (min-resolution: 2dppx) and (max-width: 1157px) {
+  .hero {
+    background-image: linear-gradient(180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%),
+      url(../img/hero/hero-tablet@2x-min.jpg);
+  }
+} 
+
+/* Desktop Hero */
+ @media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+screen and (min-resolution: 192dpi) and (min-width: 1158px),
+screen and (min-resolution: 2dppx) and (min-width: 1158px) {
+  .hero {
+    background-image: linear-gradient(180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%),
+      url(../img/hero/hero-desktop@2x-min.jpg);
+  }
+} 
