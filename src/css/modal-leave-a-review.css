@@ -1,4 +1,4 @@
-/* Bacdrop */
+/* --------------------Bacdrop-------------------- */
 .bacdrop-modal-explore {
   position: fixed;
   top: 0;
@@ -17,20 +17,27 @@
   pointer-events: none;
 }
 
-/* Modal window */
-/* mobile */
+/* --------------------Modal window-------------------- */
+/* 0-374px */
 .modal-window-explore {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 311px;
-  height: 471px;
+  width: 95%;
+  height: 95%;
   background: #fafafa;
   border-radius: 15px;
   padding: 32px 24px;
 }
 
+/* mobile */
+@media screen and (min-width: 375px) {
+  .modal-window-explore {
+    width: 311px;
+    height: 471px;
+  }
+}
 /* tablet and desktop */
 @media screen and (min-width: 768px) {
   .modal-window-explore {
@@ -40,19 +47,19 @@
   }
 }
 
-/* Close button modal window */
-/* mobile */
+/* --------------------Close button modal window-------------------- */
+
 .modal-btn-explore-close {
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: 10px;
+  right: 10px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  width: 28px;
-  height: 28px;
+  width: 22px;
+  height: 22px;
   background: transparent;
   border: transparent;
   border-radius: 50%;
@@ -62,8 +69,8 @@
   transition: background-color var(--transition-properties);
 }
 .size-btn-explore-close-icon {
-  width: 16px;
-  height: 16px;
+  width: 10px;
+  height: 10px;
 }
 
 .modal-btn-explore-close:hover,
@@ -71,6 +78,23 @@
   background-color: var(--btn-bg-color);
   border-radius: 50%;
   stroke: var(--accent-color);
+}
+
+/* mobile */
+@media screen and (min-width: 375px) {
+  .modal-btn-explore-close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+
+    width: 28px;
+    height: 28px;
+  }
+
+  .size-btn-explore-close-icon {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 /* tablet and desktop */
@@ -90,20 +114,30 @@
   }
 }
 
-/* Title modal window */
-/* mobile */
+/* --------------------Title modal window-------------------- */
+/* 0-374px */
 .title-modal-explore {
-  width: 255px;
+  width: 190px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: var(--text-color-discr);
-  margin-bottom: 32px;
+  margin-bottom: 18px;
 }
 .part-text-modal-explore {
   color: var(--accent-color);
+}
+
+/* mobile */
+@media screen and (min-width: 375px) {
+  .title-modal-explore {
+    width: 255px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
 /* tablet and desktop */
@@ -116,13 +150,13 @@
   }
 }
 
-/* Modal window form */
-/* mobile */
+/* --------------------Modal window form-------------------- */
+/* 0-374px */
 .modal-explore-form {
   display: flex;
   flex-direction: column;
-  gap: 14px;
-  margin-bottom: 18px;
+  gap: 12px;
+  margin-bottom: 14px;
 }
 
 .rew-phone-number {
@@ -132,7 +166,7 @@
 .flag-number-part {
   position: absolute;
   top: 50%;
-  left: 16px;
+  left: 12px;
 
   display: flex;
   align-items: center;
@@ -141,11 +175,15 @@
 }
 
 .modal-explore-input.number-imput {
-  padding-left: 100px;
+  padding-left: 90px;
 }
 
 .modal-explore-input.modal-form-box-textarea::placeholder {
   color: rgba(64, 64, 64, 0.3);
+}
+
+.stick-part {
+  font-size: 11px;
 }
 
 .flag-number-part::after {
@@ -153,13 +191,13 @@
   content: '';
   background-color: rgba(17, 17, 17, 0.05);
   width: 1px;
-  height: 24px;
-  left: 73px;
+  height: 21px;
+  left: 70px;
 }
 
 .modal-form-box-textarea {
   width: 100%;
-  height: 91px;
+  height: 88px;
   padding: 14px 18px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 8px;
@@ -167,15 +205,58 @@
   resize: none;
 }
 
+.modal-form-box-textarea::placeholder {
+  font-size: 9px;
+}
+
 .modal-explore-input {
-  width: 263px;
-  padding: 14px 18px;
+  width: 100%;
+  padding: 11px 15px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 8px;
   flex: none;
   order: 0;
   flex-grow: 0;
   background: #fafafa;
+}
+
+.modal-explore-input::placeholder {
+  font-size: 9px;
+}
+
+/* mobile */
+@media screen and (min-width: 375px) {
+  .modal-explore-form {
+    gap: 14px;
+    margin-bottom: 18px;
+  }
+
+  .flag-number-part {
+    left: 16px;
+  }
+
+  .modal-explore-input.number-imput {
+    padding-left: 100px;
+  }
+
+  .flag-number-part::after {
+    height: 24px;
+    left: 73px;
+  }
+
+  .modal-form-box-textarea {
+    height: 91px;
+    padding: 12px 16px;
+  }
+
+  .modal-form-box-textarea::placeholder {
+    font-size: 14px;
+  }
+
+  .modal-explore-input {
+    width: 263px;
+    padding: 14px 18px;
+  }
 }
 
 /* tablet and desktop */
@@ -197,19 +278,20 @@
   }
 }
 
-/* Submit button modal window */
-/* mobile */
+/* --------------------Submit button modal window-------------------- */
+/* 0-374px */
 .modal-explore-form-submit {
-  min-width: 93px;
-  padding: 12px 28px;
-  background: #fd9222;
+  min-width: 88px;
+  padding: 9px 25px;
+  background: var(--accent-color);
   border: transparent;
   border-radius: 100px;
 
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 9px;
   line-height: 1.21;
-  color: #ffffff;
+  color: var(--secondary-text-decr);
 
   transition: background-color var(--transition-properties);
 }
@@ -218,6 +300,16 @@
 .modal-explore-form-submit:focus {
   background-color: var(--btn-bg-color);
   color: var(--accent-color);
+}
+
+/* mobile */
+@media screen and (nim-width: 375px) {
+  .modal-explore-form-submit {
+    min-width: 93px;
+    padding: 12px 28px;
+
+    font-size: 14px;
+  }
 }
 
 /* tablet and desktop */

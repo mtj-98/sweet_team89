@@ -1,0 +1,80 @@
+<div class="bacdrop-modal-explore is-hidden" data-modal>
+  <div class="modal-window-explore">
+    <button type="button" class="modal-btn-explore-close" data-modal-close>
+      <svg class="modal-btn-explore-close-icon size-btn-explore-close-icon">
+        <use href="./img/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <h2 class="title-modal-explore">
+      leave a review <br class="br-about" />
+      about
+      <span class="part-text-modal-explore">our chocolate</span>
+    </h2>
+
+    <form class="">
+      <div class="modal-explore-form">
+        <label class="">
+          <span class="modal-form-box">
+            <input
+              type="text"
+              name="user_name"
+              required
+              minlength="2"
+              placeholder="Name"
+              class="modal-explore-input"
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?!.*\s).[a-zA-Zа-яА-ЯіІїЇґҐєЄʼ]+*$"
+              title="Please include at least 1 uppercase character, 1 lowercase character."
+            />
+          </span>
+        </label>
+
+        <label class="">
+          <span class="modal-form-box">
+            <input
+              type="email"
+              name="user_email"
+              required
+              class="modal-explore-input"
+              placeholder="Enter your email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              title="The email address must contain the @ symbol."
+            />
+          </span>
+        </label>
+
+        <label class="rew-phone-number">
+          <span class="modal-form-box">
+            <input
+              type="tel"
+              name="user_phone"
+              required
+              class="modal-explore-input number-imput"
+              placeholder="Phone number"
+              pattern="[0-9][0-9]{9}"
+              title="Please enter your phone number without using the country code."
+            />
+            <span class="flag-number-part">
+              <svg width="24" height="24" class="phone-numb-icon">
+                <use href="./img/sprite.svg#icon-flag-ua"></use>
+              </svg>
+              <span class="stick-part">+380</span>
+            </span>
+          </span>
+        </label>
+
+        <label class="">
+          <textarea
+            name="user_message"
+            class="modal-form-box-textarea"
+            placeholder="Enter text"
+          ></textarea>
+        </label>
+      </div>
+
+      <button type="submit" class="modal-explore-form-submit" data-modal-close>
+        Send
+      </button>
+    </form>
+  </div>
+</div>
