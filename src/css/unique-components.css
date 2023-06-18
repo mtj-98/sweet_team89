@@ -50,6 +50,11 @@ margin-right: auto;
   height: 100%;
 }
 
+@media screen and (max-width: 374px) {
+.unique-components-list-item {
+    width: 280px;
+}
+}
 /* ===========================================max767 */
 @media screen and (max-width: 767px) {
   .section-unique-components {
@@ -82,6 +87,11 @@ margin-right: auto;
   }
 }
 
+@media screen and (max-width: 374px) {
+.unique-components-list-item {
+    width: 100%;
+}
+}
 /* ===========================================min768 */
 @media screen and (min-width: 768px) {
   .section-unique-components {
