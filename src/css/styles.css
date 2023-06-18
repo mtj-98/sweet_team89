@@ -31,7 +31,8 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  
+  --input-border-color: rgba(17, 17, 17, 0.1);
+  --label-text-color: #000000;
   --accent-color: #fd9222;
   --text-color-discr: #111111;
   --bg-color-secondary: #1e1823;
@@ -43,8 +44,8 @@
 
 @font-face {
   font-family: 'Montserrat';
-  src: url(/src/fonts/Montserrat-ExtraBold.woff2) format('woff2'),
-    url(/src/fonts/Montserrat-ExtraBold.woff) format('woff');
+  src: url(/fonts/Montserrat-ExtraBold.woff2) format('woff2'),
+    url(/fonts/Montserrat-ExtraBold.woff) format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -52,8 +53,8 @@
 
 @font-face {
   font-family: 'Montserrat';
-  src: url(/src/fonts/Montserrat-SemiBold.woff2) format('woff2'),
-    url(/src/fonts/Montserrat-SemiBold.woff) format('woff');
+  src: url(/fonts/Montserrat-SemiBold.woff2) format('woff2'),
+    url(/fonts/Montserrat-SemiBold.woff) format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -61,8 +62,8 @@
 
 @font-face {
   font-family: 'Montserrat';
-  src: url(/src/fonts/Montserrat-Medium.woff2) format('woff2'),
-    url(/src/fonts/Montserrat-Medium.woff) format('woff');
+  src: url(/fonts/Montserrat-Medium.woff2) format('woff2'),
+    url(/fonts/Montserrat-Medium.woff) format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -70,8 +71,8 @@
 
 @font-face {
   font-family: 'Montserrat';
-  src: url(/src/fonts/Montserrat-Regular.woff2) format('woff2'),
-    url(/src/fonts/Montserrat-Regular.woff) format('woff');
+  src: url(/fonts/Montserrat-Regular.woff2) format('woff2'),
+    url(/fonts/Montserrat-Regular.woff) format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -149,3 +150,8 @@ color: var(--accent-color);
   }
 }
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
