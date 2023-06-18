@@ -51,12 +51,6 @@
     text-align: center;
     margin-top: 128px;
     margin-bottom: 50px;
-
-    /* width: 350px; */
-    /* font-weight: 600;
-    line-height: 1.16;
-    letter-spacing: -0.03em;
-    text-transform: uppercase; */
 }
 
 .him-title-accent {
@@ -81,61 +75,6 @@
     flex: none;
     position: relative;
 }
-
-/* Mobile*/
-/* @media screen and (max-width: 767px) {
-    .him-img {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-            url(/img/how-it’s-made/mobile/image-mobile-min.jpg);
-    }
-}
-@media 
-    screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-    screen and (min-resolution: 192dpi) and (max-width: 767px),
-    screen and (min-resolution: 2dppx) and (max-width: 767px) {
-    .him-img  {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(/img/how-it’s-made/mobile/image-mobile@2x-min.jpg);
-    }
-} */
-
-/* Tablet*/
-/* @media screen and (min-width: 768px) {
-    .him-img {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(/img/how-it’s-made/tablet/image-tablet-min.jpg);
-    }
-}
-@media 
-    screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-    screen and (min-resolution: 192dpi) and (min-width: 768px),
-    screen and (min-resolution: 2dppx) and (min-width: 768px) {
-    .him-img {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(/img/how-it’s-made/tablet/image-tablet@2x-min.jpg);
-    }
-} */
-
-/* Desktop*/
-/* @media 
-    screen and (min-width: 1158px) {
-    .him-img {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(/img/how-it’s-made/desktop/image-desktop-min.jpg);
-    }
-}
-@media 
-    screen and (min-width: 1158px), 
-    screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
-    screen and (min-resolution: 192dpi) and (min-width: 1158px),
-    screen and (min-resolution: 2dppx) and (min-width: 1158px) {
-        .him-img {
-        background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url(/img/how-it’s-made/desktop/image-desktop@2x-min.jpg);
-    }
-}  */
-/* ///Desktop*/
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
     .him-img {
@@ -180,23 +119,17 @@
     }
 }
 
-/* Іконка PLAY */
-
+/* PLAY */
 .icon-play {
     position: absolute;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     width: 44px;
     height: 44px;
     padding: 11px 8px 9px 13px;
-    /* padding-left: 0;
-padding-right: 0; */
     fill: var(--secondary-text-decr);
     background-color: transparent;
-
     border-radius: 50%;
     border-width: 1px;
     border-color: var(--secondary-text-decr);
@@ -257,11 +190,16 @@ padding-right: 0; */
 }
 
 .him-menu-list {
+    list-style: none;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
-    position: relative;
+    text-align: left;
+
+    /* list-style: disc;
+    list-style-image: url(./img/check-mark.jpg); */
 }
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
@@ -270,53 +208,48 @@ padding-right: 0; */
     }
 }
 
+/* Позиціонування маркерів */
+/* Варіант 1 */
+
 .him-menu-item {
-    list-style-type: none;
-    box-sizing: border-box;
-
-
-    /* background-color: #4C4C4C;
-    border: 1px solid #ECEDED; */
-    /* Ellipse 1 */
-
-    /* box-sizing: border-box;
-
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    left: 0px;
-    top: 5px;
-
-    background: #4C4C4C;
-    border: 1px solid #ECEDED; */
-
+    position: relative;
+    display: flex;
 }
 
-/* .description-proces-item {
-    position: relative;
-} */
+.him-menu-item::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #4C4C4C;
+    border: 1px solid #ECEDED;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 5px;
+    margin-right: 8px;
+    left: -8px;
+    top: 5px;
+    transform: translateX(-4px);
+}
 
-.icon-list-circle {
-    content: icon;
+
+/* Варіант 2 */
+
+/* .description-proces-item {
+    display: block;
+}     */
+    /* position: relative; */
+
+
+/* .icon-list-circle {
     position: absolute;
     background-color: #4C4C4C;
     border: 1px solid #ECEDED;
     border-radius: 50%;
-    top: 50%;
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-    /*  */
-}
-
-/* .current::after {
-    box-sizing: border-box;
-    width: 100%;
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    height: 4px;
-    background-color: var(--accent-color);
-    border-radius: 2px;
+    margin-top: 5px;
+    margin-right: 8px;
+    transform: translate(-200%, -450%);
 } */
+    /* top: 25%; */
+    /* left: 150%; */
+
