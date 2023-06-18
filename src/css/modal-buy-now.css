@@ -91,6 +91,9 @@
 
 @media screen and (min-width: 768px) {
   .modal-buy-close-btn {
+    top: 24px;
+    right: 24px;
+
     width: 40px;
     height: 40px;
   }
