@@ -37,7 +37,6 @@
   --bg-color-secondary: #1e1823;
   --modal-bg-color: #fafafa;
   --btn-bg-color: #fcf1e0;
-  --main-bg-color: #e2e2e2;
   --secondary-text-decr: #ffffff;
   --transition-properties: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -80,7 +79,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: var(--main-bg-color);
+  background-color: #fafafa;
   color: var(--text-color-discr);
   font-size: 14px;
   line-height: 1.29;
@@ -127,7 +126,7 @@ body {
   }
 }
 
-/* Movile title */
+/* Mobile title */
 .section-title {
   font-weight: 600;
   font-size: 20px;
@@ -145,12 +144,8 @@ color: var(--accent-color);
 /* Tablet and Desktop title */
 @media screen and (min-width: 768px) {
   .section-title {
-    font-weight: 600;
     font-size: 24px;
     line-height: 1.16;
-    text-align: center;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
   }
 }
 
