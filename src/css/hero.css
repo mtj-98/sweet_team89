@@ -43,7 +43,7 @@
 .button-hero-buy {
   background: var(--accent-color);
   padding: 12px 28px;
-  font-family: Montserrat;
+  font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
   border-radius: 100px;
@@ -55,7 +55,7 @@ margin-right: 14px;
 
 .button-hero-how {
   padding: 12px 20px;
-  font-family: Montserrat;
+  font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
   border-radius: 100px;
@@ -72,8 +72,6 @@ margin-right: 14px;
 
   align-items: center;
 
-
-  font-family: Montserrat;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.16;
