@@ -1,0 +1,134 @@
+.our-products {
+    padding-bottom: 128px;
+}
+
+.our-products-container {
+    max-width: 375px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.our-products-text {
+    margin-bottom: 50px;
+}
+
+.products-card-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0;
+    width: inherit;
+    background: #FFFFFF;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+}
+
+@media screen and (max-width:767px) {
+    .products-card-list {
+        display: none;
+    }
+}
+
+.chocolate-flavour {
+    margin: 8px 0 2px 0;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #111111;
+}
+
+.type-chocolate {
+    margin-bottom: 18px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: rgba(17, 17, 17, 0.7);
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 8px 20px;
+    background: #FAFAFA;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .our-products-container {
+        max-width: 768px;
+    }
+
+    .products-card-list {
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .products-card-item {
+        width: 270px;
+    }
+
+    .products-card {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .products-card-item {
+        flex-basis: calc((100% - 54px) / 4);
+    }
+}
+
+.swiper {
+    border-radius: 15px;
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 0;
+}
+
+@media screen and (min-width: 320px) {
+    .swiper {
+        max-width: 335px;
+        height: 397px;
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+    width: 28px;
+    height: 13px;
+    border-radius: 7px;
+    background: #FD9222;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+}
+
+@media screen and (min-width: 768px) {
+    .swiper {
+        display: none;
+    }
+}
