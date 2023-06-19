@@ -1,11 +1,11 @@
 <!-- ========= Modal Buy Now ========= -->
 
-<div class="backdrop-modal is-hidden" data-modal-buy-now>
+<div class="backdrop-modal is-hidden" data-modal-buy-now data-modal-buy-now-top>
   <div class="modal-buy-now">
     <button class="modal-buy-close-btn" type="button" data-modal-buy-now-close>
       <svg
-        class="icon-modal-buy-close"
-        aria-label="icon close buy now modal window"
+        class="modal-buy-close-btn-icon"
+        aria-label="button to close buy now modal window"
       >
         <use
           class="modal-buy-close-icon"
@@ -49,6 +49,8 @@
             />
             <img
               src="./img/order-buy/mobile/choco-order-mobile-1-min.jpg"
+              width="120px"
+              height="107px"
               alt="Milk chocolate"
             />
           </picture>
@@ -88,6 +90,8 @@
             <img
               src="./img/order-buy/mobile/choco-order-mobile-2-min.jpg"
               alt="White chocolate and chocolate with nuts"
+              width="120px"
+              height="107px"
             />
           </picture>
           <span class="modal-buy-products-weight">200 g</span>
@@ -126,6 +130,8 @@
             <img
               src="./img/order-buy/mobile/choco-order-mobile-3-min.jpg"
               alt="Dark chocolate"
+              width="120px"
+              height="111px"
             />
           </picture>
           <span class="modal-buy-products-weight">300 g</span>
@@ -146,7 +152,7 @@
               type="text"
               name="user-first-name"
               placeholder="Name"
-              pattern="[a-zA-Zа-яА-ЯіІїЇґҐєЄʼ- ]+"
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?!.*\s).[a-zA-Zа-яА-ЯіІїЇґҐєЄʼ]+*$"
               title="Please include at least 1 uppercase character, 1 lowercase character."
               required
               autofocus
@@ -157,20 +163,20 @@
               type="text"
               name="user-last-name"
               placeholder="Surname"
-              pattern="[a-zA-Zа-яА-ЯіІїЇґҐєЄʼ- ]+"
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?!.*\s).[a-zA-Zа-яА-ЯіІїЇґҐєЄʼ]+*$"
               title="Please include at least 1 uppercase character, 1 lowercase character."
               required
             />
           </div>
         </div>
         <div class="modal-buy-field-wrapper">
-          <label for="user-email" class="modal-buy-label">Email </label>
+          <label for="user-email-address" class="modal-buy-label">Email </label>
           <div class="modal-buy-input-wrp">
             <input
               class="modal-buy-input"
-              id="user-email"
+              id="user-email-address"
               type="email"
-              name="user-email"
+              name="user-email-address"
               placeholder="Enter your email"
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
               title="The email address must contain the @ symbol."

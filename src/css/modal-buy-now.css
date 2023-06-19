@@ -75,7 +75,7 @@
   background-color: var(--btn-bg-color);
 }
 
-.icon-modal-buy-close {
+.modal-buy-close-btn-icon {
   width: 16px;
   height: 16px;
   stroke: var(--text-color-discr);
@@ -98,7 +98,7 @@
     height: 40px;
   }
 
-  .icon-modal-buy-close {
+  .modal-buy-close-btn-icon {
     width: 22px;
     height: 22px;
   }
