@@ -53,6 +53,15 @@
 
 @font-face {
   font-family: 'Montserrat';
+  src: url(/fonts/Montserrat-ExtraBoldItalic.woff) format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Montserrat';
   src: url(/fonts/Montserrat-SemiBold.woff2) format('woff2'),
     url(/fonts/Montserrat-SemiBold.woff) format('woff');
   font-weight: 600;
@@ -79,7 +88,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
   background-color: #fafafa;
   color: var(--text-color-discr);
   font-size: 14px;
