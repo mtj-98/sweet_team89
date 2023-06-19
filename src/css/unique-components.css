@@ -233,6 +233,16 @@ margin-right: auto;
   color: var(--text-color-discr);
 }
 
+/* @media screen and (min-width: 1200px) {
+  .overlay-description {
+    overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 9;
+      -webkit-box-orient: vertical;
+      text-overflow: ellipsis;
+  }
+} */
+
 .btn-overlay:hover,
 .btn-overlay:focus {
   color: var(--secondary-text-decr);
