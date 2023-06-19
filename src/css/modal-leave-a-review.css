@@ -121,9 +121,6 @@
   }
 }
 
-
-
-
 /* tablet and desktop */
 @media screen and (min-width: 768px) {
   .title-modal-explore {
@@ -141,6 +138,12 @@
   flex-direction: column;
   gap: 14px;
   margin-bottom: 18px;
+}
+
+.modal-explore-input:focus, 
+.modal-form-box-textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
 }
 
 .rew-phone-number {
