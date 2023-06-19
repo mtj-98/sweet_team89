@@ -1,6 +1,6 @@
 <!-- ========= Modal Buy Now ========= -->
 
-<div class="backdrop-modal is-hidden" data-modal-buy-now>
+<div class="backdrop-modal is-hidden" data-modal-buy-now data-modal-buy-now-top>
   <div class="modal-buy-now">
     <button class="modal-buy-close-btn" type="button" data-modal-buy-now-close>
       <svg
@@ -170,7 +170,7 @@
               class="modal-buy-input"
               id="user-email-address"
               type="email"
-              name="user-email"
+              name="user-email-address"
               placeholder="Enter your email"
               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
               title="The email address must contain the @ symbol."
@@ -238,6 +238,7 @@
         type="submit"
         aria-label="button to submit and close buy now modal window"
         data-modal-buy-now-close
+        data-modal-buy-now-top-close
       >
         Submit
       </button>
