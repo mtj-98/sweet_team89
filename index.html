@@ -19,7 +19,7 @@
     
     
     <script type="module" crossorigin src="/sweet_team89/assets/index-5351832b.js"></script>
-    <link rel="stylesheet" href="/sweet_team89/assets/index-d37b29d7.css">
+    <link rel="stylesheet" href="/sweet_team89/assets/index-aa5d2f4a.css">
   </head>
   <body>
     <!-- Partial -->
@@ -95,6 +95,7 @@
     <button
       type="button"
       class="menu-btn js-open-menu"
+      aria-label="button to open mobile menu"
       aria-expanded="false"
       aria-controls="mobile-menu"
     >
@@ -106,12 +107,12 @@
     <!-- MOBILE MENU -->
 
     <div class="mobile-menu js-menu-container" id="mobile-menu">
-      <button class="mobile-menu-close-btn js-close-menu">
+      <button
+        class="mobile-menu-close-btn js-close-menu"
+        aria-label="button to close mobile menu"
+      >
         <svg class="mobile-menu-close-icon">
-          <use
-            class="icon-menu-cross"
-            href="/sweet_team89/assets/sprite-023334bd.svg#icon-close"
-          ></use>
+          <use class="icon-menu-cross" href="/sweet_team89/assets/sprite-023334bd.svg#icon-close"></use>
         </svg>
       </button>
 
@@ -181,25 +182,40 @@
     <main>
       <!-- Hero -->
 <section class="section-hero">
-    <h1 class="visually-hidden">Hero</h1>
-    <div class="hero">
-        <h2 class="hero-dicr">Treat yourself or a loved one to our finest ingredients for a moment of pure delight!
-        </h2>
-        <div class="button-hero">
-            <div class="button-hero-left ">
-                <button class="button-hero-buy" data-modal-buy-now-open>Buy now</button>
-                <a class="button-hero-how" href="#how-it-is-made">How it’s made</a>
-            </div>
-            <a class="button-hero-footer button-hero-right" href="#footer">scroll down
-                <div class="check-mark-icon">
-                    <svg class="modal-icon" aria-label="check mark icon" height="16" width="16">
-                        <use href="/sweet_team89/assets/sprite-023334bd.svg#icon-scroll"></use>
-                    </svg>
-                </div>
-            </a>
+  <h1 class="visually-hidden">Hero</h1>
+  <div class="hero">
+    <h2 class="hero-dicr">
+      Treat yourself or a loved one to our finest ingredients for a moment of
+      pure delight!
+    </h2>
+    <div class="button-hero">
+      <div class="button-hero-left">
+        <button
+          class="button-hero-buy"
+          aria-label="button to open buy now modal window"
+          data-modal-buy-now-open
+        >
+          Buy now
+        </button>
+        <a class="button-hero-how" href="#how-it-is-made">How it’s made</a>
+      </div>
+      <a class="button-hero-footer button-hero-right" href="#footer"
+        >scroll down
+        <div class="check-mark-icon">
+          <svg
+            class="modal-icon"
+            aria-label="check mark icon"
+            height="16"
+            width="16"
+          >
+            <use href="/sweet_team89/assets/sprite-023334bd.svg#icon-scroll"></use>
+          </svg>
         </div>
+      </a>
     </div>
+  </div>
 </section>
+
       <!-- ############### ADVANTAGES ############### -->
 <section class="advantages-section">
     <div class="container advantages-container">
@@ -494,8 +510,35 @@
             </ul>
         </div>
     </div>
+    <div class="description-proces">
+      <p class="description-proces-title">
+        Try our chocolates today and discover the perfect balance of flavor
+      </p>
+      <ul class="him-menu-list">
+        <li class="him-menu-item">
+          Heat the milk in a saucepan without bringing it to a boil. Add sugar
+          and cocoa powder.
+        </li>
+        <li class="him-menu-item">
+          At the same time, prepare a water bath. Melt the butter on it.
+        </li>
+        <li class="him-menu-item">
+          "Mix" the milk mixture and already liquid butter. Mix thoroughly with
+          a silicone spatula so that the mass becomes uniform and silky.
+        </li>
+        <li class="him-menu-item">
+          Heat the mixture over low heat, letting it barely boil.
+        </li>
+        <li class="him-menu-item">
+          Pour the chocolate into special containers (can be replaced with ice
+          molds). Allow to cool and harden.
+        </li>
+      </ul>
+    </div>
+  </div>
 </section>
 <!-- ############### /HIM ############### -->
+
       
       <section class="top-sellers-section" id="top-sellers">
   <div class="container">
@@ -821,8 +864,8 @@
   <div class="modal-buy-now">
     <button class="modal-buy-close-btn" type="button" data-modal-buy-now-close>
       <svg
-        class="icon-modal-buy-close"
-        aria-label="icon close buy now modal window"
+        class="modal-buy-close-btn-icon"
+        aria-label="button to close buy now modal window"
       >
         <use
           class="modal-buy-close-icon"
@@ -954,11 +997,11 @@
           </div>
         </div>
         <div class="modal-buy-field-wrapper">
-          <label for="user-email" class="modal-buy-label">Email </label>
+          <label for="user-email-address" class="modal-buy-label">Email </label>
           <div class="modal-buy-input-wrp">
             <input
               class="modal-buy-input"
-              id="user-email"
+              id="user-email-address"
               type="email"
               name="user-email"
               placeholder="Enter your email"
