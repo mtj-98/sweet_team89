@@ -16,11 +16,7 @@ const swiper = new Swiper('.swiper', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-  
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
+
 
     // slidesPerView: 1,
 
@@ -44,9 +40,11 @@ const swiper = new Swiper('.swiper', {
         },
         768: {
             slidesPerView: 2.6,
+            spaceBetween: 18,
         },
         1200: {
             slidesPerView: 4,
+            spaceBetween: 18,
         }
     },
   });
