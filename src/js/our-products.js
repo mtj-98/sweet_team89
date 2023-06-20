@@ -6,7 +6,10 @@ const swiper = new Swiper('.swiper', {
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
     },
+
+    
   
     // Navigation arrows
     navigation: {
@@ -21,7 +24,18 @@ const swiper = new Swiper('.swiper', {
 
     // slidesPerView: 1,
 
-    loop: true,
+    loop: false,
+
+    // ДЛЯ ЗМІНИ КУРСОРУ ПРИ ПЕРЕТАСКУВАННІ СЛАЙДУ
+    grabCursor: true,
+    // ПЕРЕКЛЮЧЕННЯ НА СЛАЙД ПРИ КЛІКУ НА НЬОГО
+    slideToClickedSlide: true,
+    // УПРАВЛІННЯ КЛАВІАТУРОЮ
+    keyboard: {
+        enabled: true,
+        onlyInViewport: true,
+        pageUpDown: true,
+    },
     
     breakpoints: {
         320: {
