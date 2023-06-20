@@ -19,7 +19,6 @@
 .advantages-description {
     color: rgba(255, 255, 255, 0.7);
     width: 308px;
-    max-height: 119px;
     line-height: 1.21;
 }
 
@@ -32,9 +31,6 @@
 }
 
 
-.advantages-description-taste {
-    padding-bottom: 18px;
-}
 
 
 /* ###############   0-374PX   ############### */
@@ -73,11 +69,7 @@
 
     .advantages-container {
         padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    .advantages-description-production {
-        padding-bottom: 16px;
+        padding-bottom: 36px;
     }
     
     .advantages-item {
@@ -96,23 +88,18 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .advantages-list {
         flex-wrap: wrap;
-        gap: 32px;
+        column-gap: 60px;
+        row-gap: 32px;
     }
 
     .advantages-container {
-        height: 620px;
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 85px;
     }
 
     .advantages-decor {
         position: relative;
-        padding-right: 18px;
         height: 244px;
-    }
-
-    .advantages-description-production {
-        padding-bottom: 35px;
     }
 }
 
@@ -150,10 +137,6 @@
         height: 100%;
         top: 60px;
         background-color: rgba(255, 255, 255, 0.5);
-    }
-
-    .advantages-description-production {
-        padding-bottom: 35px;
     }
 }
 
