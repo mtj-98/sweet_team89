@@ -77,6 +77,23 @@
   stroke: currentColor;
 }
 
+.mobile-menu-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(46, 47, 66, 0.4);
+  display: none;
+  transform: translateX(0);
+  transition: transform 800ms ease-out;
+}
+
+.mobile-menu.is-open ~ .mobile-menu-backdrop {
+  display: block;
+}
+
 .mobile-menu {
   position: fixed;
   top: 0;
