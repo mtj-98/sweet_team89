@@ -32,12 +32,11 @@ const swiper = new Swiper('.swiper', {
         onlyInViewport: true,
         pageUpDown: true,
     },
-    
-    breakpoints: {
-        320: {
             slidesPerView: 1,
-            spaceBetween: 18,
-        },
+            spaceBetween: 18,    
+    
+            breakpoints: {
+  
         768: {
             slidesPerView: 2.6,
             spaceBetween: 18,
@@ -48,3 +47,8 @@ const swiper = new Swiper('.swiper', {
         }
     },
   });
+
+
+
+
+
