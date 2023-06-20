@@ -4,28 +4,85 @@
   padding-bottom: 128px;
 }
 
-/* .video-him {
-  border-radius: 15px;
-  overflow: hidden;
-
-  padding: ;
-} */
-
 .video-container {
+  width: 100%;
+  max-width: 335px;
+  max-height: 500px;
   overflow: hidden;
   position: relative;
-  min-height:315px;
-  width: 80%;
+  border-radius: 15px;
   margin: 0 auto;
+  object-fit: cover;
 }
 
-.video-container video, .video-container iframe {
+.video-container,
+.responsive-iframe {
   position: absolute;
-  border: 0;
-  height: 100%;
-  left: 0; 
   top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
   width: 100%;
+}
+@media screen and (max-width: 319px) {
+  .video-container {
+    width: 100%;
+    height: 100%;
+  }}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .video-container {
+    min-width: 315px;
+    min-height: 500px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    width: 80%;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+} 
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .video-container {
+      min-width: 614px;
+      min-height: 400px;
+      overflow: hidden;
+      position: relative;
+      border-radius: 15px;
+      width: 80%;
+      margin: 0 auto;
+      object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .video-container {
+      min-width: 600px;
+      min-height: 400px;
+      overflow: hidden;
+      position: relative;
+      border-radius: 15px;
+      width: 80%;
+      margin: 0 auto;
+      object-fit: cover;
+  }
+}
+
+/*  
+@media screen and (max-width: 65.9375em) {
+    .video-container {   
+      min-height:460px;
+      width: 90%;    
+    }
+}
+ 
+@media screen and (max-width:39.9375em) {
+    .video-container {   
+      min-height:240px;
+      width: 100%;   
+    }
 }
 
 @media screen and (max-width: 65.9375em) {
@@ -40,14 +97,7 @@
     min-height:240px;
     width: 100%;   
   }
-}
-
-
-
-
-
-
-
+} */
 
 @media screen and (min-width: 320px) and (max-width: 374px) {
   .him-container {
@@ -114,7 +164,7 @@
 @media screen and (min-width: 320px) and (max-width: 374px) {
   .him-img {
     width: 100%;
-    /* height: 500px; */
+    height: 500px;
   }
 }
 
@@ -239,6 +289,7 @@
     gap: 18px;
   }
 }
+
 /* Позиціонування маркерів */
 
 .him-menu-item {
@@ -260,4 +311,5 @@
   top: 5px;
   transform: translateX(-8px);
 }
+
 /* ############### /HIM ############### */
