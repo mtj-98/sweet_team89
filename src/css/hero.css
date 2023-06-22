@@ -1,22 +1,23 @@
 /* mobile */
 .section-hero {
   padding-bottom: 72px;
-
 }
-
 .hero {
-  background: linear-gradient(180deg,
+  background-color: var(--bg-color-secondary);
+  background: linear-gradient(
+      180deg,
       rgba(17, 17, 17, 0) 0%,
-      rgba(17, 17, 17, 0.4) 100%),
+      rgba(17, 17, 17, 0.4) 100%
+    ),
     url(/img/hero/hero-mobile-min.jpg);
   background-repeat: no-repeat;
-  background-color: var(--bg-color-secondary);
   background-size: cover;
+  background-position: center;
   border-radius: 30px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 395px;
   padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .hero-dicr {
@@ -28,18 +29,14 @@
   margin-bottom: 32px;
   max-width: 295px;
 }
-
 /* btn */
-
 .button-hero {
   display: flex;
   margin-top: 32px;
   gap: 14px;
   flex-wrap: wrap;
-  align-items: center
-
+  align-items: center;
 }
-
 .button-hero-buy {
   background: var(--accent-color);
   padding: 12px 28px;
@@ -49,10 +46,10 @@
   border-radius: 100px;
   color: var(--secondary-text-decr);
   border: none;
-  transition: background-color var(--transition-properties), color var(--transition-properties);
-margin-right: 14px;
+  transition: background-color var(--transition-properties),
+    color var(--transition-properties);
+  margin-right: 14px;
 }
-
 .button-hero-how {
   padding: 12px 20px;
   font-weight: 600;
@@ -62,63 +59,54 @@ margin-right: 14px;
   color: var(--secondary-text-decr);
   background: none;
   border: 1px solid var(--secondary-text-decr);
-  transform: background-color var(--transition-properties), color var(--transition-properties), border-color var(--transition-properties);
-
+  transform: background-color var(--transition-properties),
+    color var(--transition-properties),
+    border-color var(--transition-properties);
 }
-
 .button-hero-footer {
   position: relative;
   display: flex;
-
   align-items: center;
-
   font-weight: 500;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: -0.03em;
   color: var(--secondary-text-decr);
-
   background: none;
   border: none;
-  transition: color var(--transition-properties), background-color var(--transition-properties), fill var(--transition-properties);
+  transition: color var(--transition-properties),
+    background-color var(--transition-properties),
+    fill var(--transition-properties);
 }
-
 .button-hero-buy:hover,
 .button-hero-buy:focus {
   background-color: var(--btn-bg-color);
   color: var(--accent-color);
 }
-
 .button-hero-how:hover,
 .button-hero-how:focus {
   background-color: var(--main-bg-color);
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
-
 .button-hero-footer:hover,
 .button-hero-footer:focus {
   color: var(--accent-color);
 }
-
 .button-hero-footer:hover .check-mark-icon,
 .button-hero-footer:focus .check-mark-icon {
   background-color: var(--accent-color);
   color: var(--accent-color);
 }
-
 .button-hero-footer:hover .check-mark-icon .modal-icon,
 .button-hero-footer:focus .check-mark-icon .modal-icon {
   fill: var(--secondary-text-decr);
-
 }
-
 /* icon */
 .modal-icon {
   fill: var(--accent-color);
   padding: 3px;
 }
-
 .check-mark-icon {
   border-radius: 50%;
   height: 28px;
@@ -129,33 +117,37 @@ margin-right: 14px;
   align-items: center;
   justify-content: center;
   margin-left: 12px;
-
 }
-
 @media screen and (min-width: 375px) {
   .button-hero-how {
     padding: 12px 28px;
   }
-}
-
-/* tablet */
-
-@media screen and (min-width: 768px) {
 
   .hero {
-    background: linear-gradient(180deg,
-        rgba(17, 17, 17, 0) 0%,
-        rgba(17, 17, 17, 0.4) 100%),
-      url(/img/hero/hero-tablet-min.jpg);
-    width: 768px;
-    margin-left: auto;
-    margin-right: auto;
-    background-size: cover;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    padding-top: 381px;
+    max-width: 375px;
   }
+}
+/* tablet */
+@media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(/img/hero/hero-tablet-min.jpg);
+    max-width: 768px;
+    padding-bottom: 40px;
+    padding-top: 671px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+.container.hero {
+  padding-left: 40px;
+  padding-right: 40px;
+}
 
   .hero-dicr {
     font-weight: 500;
@@ -165,21 +157,17 @@ margin-right: 14px;
     color: var(--secondary-text-decr);
     max-width: 484px;
   }
-
   /* btn */
   .button-hero {
     flex-wrap: nowrap;
-    align-items: center
+    align-items: center;
   }
-
   .button-hero-how {
     padding: 14px 40px;
   }
-
   .button-hero-buy {
     padding: 14px 40px;
   }
-
   .button-hero-footer {
     align-items: center;
     font-weight: 500;
@@ -187,16 +175,12 @@ margin-right: 14px;
     line-height: 1.28;
     letter-spacing: -0.03em;
     color: var(--secondary-text-decr);
-
     background: none;
     border: none;
-
   }
-
   .button-hero-right {
     margin-left: auto;
   }
-
   .button-hero-left {
     border-radius: 100px;
     display: block;
@@ -204,9 +188,7 @@ margin-right: 14px;
     font-size: 14px;
     line-height: 1.21;
     color: var(--secondary-text-decr);
-   
   }
-
   /* icon */
   .modal-icon {
     width: 22px;
@@ -214,60 +196,64 @@ margin-right: 14px;
     align-items: center;
     justify-content: center;
   }
-
   .check-mark-icon {
     width: 38px;
     height: 38px;
     padding: 6px;
-
   }
 }
-
 /* Desktop */
 @media screen and (min-width: 1200px) {
   .hero {
-    background: linear-gradient(180deg,
+    background: linear-gradient(
+        180deg,
         rgba(17, 17, 17, 0) 0%,
-        rgba(17, 17, 17, 0.4) 100%),
+        rgba(17, 17, 17, 0.4) 100%
+      ),
       url(/img/hero/hero-desktop-min.jpg);
-    background-size: cover;
-    width: 1158px;
+    max-width: 1158px;
+    padding-top: 381px;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
-
 /* MOBILE HERO */
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
-screen and (min-resolution: 192dpi) and (max-width: 767px),
-screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px) {
   .hero {
-    background-image: linear-gradient(180deg,
+    background-image: linear-gradient(
+        180deg,
         rgba(17, 17, 17, 0) 0%,
-        rgba(17, 17, 17, 0.4) 100%),
+        rgba(17, 17, 17, 0.4) 100%
+      ),
       url(/img/hero/hero-mobile@2x-min.jpg);
   }
-} 
-
+}
 /* Tablet Hero */
- @media screen and (min-device-pixel-ratio: 2) and (max-width: 1199px),
-screen and (min-resolution: 192dpi) and (max-width: 1199px),
-screen and (min-resolution: 2dppx) and (max-width: 1199px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(180deg,
+    background-image: linear-gradient(
+        180deg,
         rgba(17, 17, 17, 0) 0%,
-        rgba(17, 17, 17, 0.4) 100%),
+        rgba(17, 17, 17, 0.4) 100%
+      ),
       url(/img/hero/hero-tablet@2x-min.jpg);
   }
-} 
-
+}
 /* Desktop Hero */
- @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
-screen and (min-resolution: 192dpi) and (min-width: 1200px),
-screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(180deg,
+    background-image: linear-gradient(
+        180deg,
         rgba(17, 17, 17, 0) 0%,
-        rgba(17, 17, 17, 0.4) 100%),
+        rgba(17, 17, 17, 0.4) 100%
+      ),
       url(/img/hero/hero-desktop@2x-min.jpg);
   }
-} 
+}
